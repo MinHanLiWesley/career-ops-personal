@@ -1,0 +1,168 @@
+%-------------------------
+% Resume in LaTeX -- Software Engineer track
+% Tailored for Min-Han Li, Formosa Plastics Texas (Point Comfort) Software Engineer role
+% Template: Jake Gutierrez / sb2nov ; MIT License
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Min-Han Li (Wesley)} \\ \vspace{1pt}
+    \small +1-781-475-7402 $|$ \href{mailto:minhan.li.wesley@gmail.com}{\underline{minhan.li.wesley@gmail.com}} $|$
+    \href{https://linkedin.com/in/minhanliwesley}{\underline{linkedin.com/in/minhanliwesley}} $|$
+    San Jose, CA
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Computer Science}{09/2024 -- 04/2026}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{Coursework: Cloud Computing, Distributed Systems, Object-Oriented Design, Software Development}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {B.S., Double Major in Computer Science and Chemical Engineering}{09/2016 -- 05/2022}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{05/2025 -- 11/2025}
+      {ByteDance (TikTok) $|$ Go, Python, SQL, Redis, Docker, RAG, Multi-Agent}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Shipped AI-powered on-call diagnostic bot in Go serving \textbf{200+} internal users, reducing average resolution time \textbf{50\%}, from 7 days to 3.5 days, by auto-aggregating data and retrieving past incidents at ticket creation}
+        \resumeItem{Developed \textbf{6+} Go services that the diagnostic LLM agent invokes as tools for permission verification, access checks, log lookup, and bug filing, behind a unified card interface accessible to non-technical staff}
+        \resumeItem{Designed multi-agent diagnostic workflows from internal runbooks for ad delivery debugging via RAG and LLM-based routing, automating \textbf{50\%} of \textbf{30+} weekly ad-platform issues and reducing manual escalations previously involving \textbf{10+} specialists per incident}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{11/2024 -- 01/2025}
+      {ReMo $|$ Go, FastAPI, Docker, AWS ECS, React}{Portland, ME}
+      \resumeItemListStart
+        \resumeItem{Delivered ReMo's fundraising MVP: a \textbf{90\%} accurate book spine recognition pipeline combining YOLOv11 detection, Internvl recognition, and custom LLM-based metadata extraction}
+        \resumeItem{Built Go and FastAPI backend services achieving \textbf{sub-3s} end-to-end inference latency across the multi-stage OCR and metadata extraction pipeline}
+        \resumeItem{Containerized and deployed services via Docker, AWS ECS, and API Gateway for high availability; optimized React frontend with lazy-loading and code-splitting, cutting initial page load \textbf{25\%}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{07/2023 -- 08/2023}
+      {Yanray Inc. $|$ C\#, .NET Core, Azure App Service, Azure AI Vision, Redis, Cosmos DB}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Delivered \textbf{95\%} structured field extraction accuracy by building a business card recognition pipeline with Azure AI Vision and a custom LLM, deployed on .NET Core via Azure App Service with Application Insights telemetry}
+        \resumeItem{Boosted metadata retrieval speed \textbf{31\%}, from \textbf{175ms} to \textbf{120ms}, by caching reference lookups in Redis and optimizing Cosmos DB queries}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research \& Development Intern}{07/2022 -- 08/2022}
+      {Acer $|$ Python, PyTorch, OpenVINO, ONNX, YOLOv7, FaceNet}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Trained and fine-tuned YOLOv7 and FaceNet models in PyTorch for face and QR recognition, optimizing for accuracy and on-device CPU deployment}
+        \resumeItem{Integrated the trained models into a real-time Python assistant achieving under \textbf{300ms} latency for \textbf{6 concurrent users} via OpenVINO quantization and async inference}
+        \resumeItem{Reduced model latency \textbf{50\%} via INT8 quantization and ONNX conversion; submitted as a \textbf{patent} for hardware-level integration into Acer laptops}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant, Industrial Collaboration}{02/2021 -- 07/2021}
+      {Formosa Plastics and NTU $|$ Python, Aspen Plus, Cantera, PyTorch, AutoML, Windows}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Built a Python Windows desktop app wrapping Cantera, used by Formosa engineers to design a new \textbf{300,000 ton/year} EDC cracker for the Texas plant; ran PFR analysis \textbf{3 times faster} than Aspen Plus}
+        \resumeItem{Calibrated 31-reaction EDC kinetic mechanism in Aspen Plus via Python automation, iteratively tuning parameters to fit historical production data from two plants}
+        \resumeItem{Trained an AutoML-tuned neural network on \textbf{80,000} plant measurements, achieving under \textbf{1\%} error on cracking and coking rates vs Mailiao and Texas plant data}
+        \resumeItem{Quantified plant operating cycle of \textbf{13-22 months} across temperature, pressure, and feed composition ranges, informing throughput-vs-maintenance trade-offs delivered to Formosa Heavy Industries for final reactor design}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{Languages}{: Python, Go, JavaScript, TypeScript, C\#, C++, Java, SQL, Bash} \\
+\textbf{Backend \& Frontend}{: Flask, FastAPI, .NET Core, Spring Boot, Node.js, React} \\
+\textbf{Cloud \& DevOps}{: Microsoft Azure (App Service, Application Insights), AWS (ECS, API Gateway), GCP, Docker, Kubernetes, CI/CD} \\
+\textbf{Process Modeling \& ML}{: Aspen Plus, Cantera, PyTorch, scikit-learn, AutoML, RAG, multi-agent systems} \\
+\textbf{Databases}{: SQL Server, PostgreSQL, MySQL, Redis, MongoDB, Cosmos DB} \\
+\textbf{Practices}{: System integration, observability, on-call response, automation scripting, internal tooling}
+    }}
+ \end{itemize}
+
+\end{document}

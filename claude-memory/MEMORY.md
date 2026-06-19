@@ -1,0 +1,9 @@
+- [User profile — Min-Han Li](user_profile.md) — new-grad SWE (MS CS Northeastern, grad 04/2026), strong in Go + AI/RAG/agents, ByteDance intern
+- [Sibling repo — /Users/liminhan/Desktop/job/](project_sibling_job_repo.md) — user's self-built job search agent; preferences there are source of truth (H1B needed, new grad 2026, Bay Area, Go/Python/AI)
+- [Resume is LaTeX — don't use HTML PDF pipeline](feedback_resume_latex.md) — output tailoring as markdown bullets he pastes into his LaTeX template
+- [Comp-chem pivot — secondary track](project_comp_chem_pivot.md) — B.S. ChemE at NTU is the anchor; tailored CV at cv-comp-chem.md, primary cv.md stays SWE
+- [IT/sysadmin track CV — Formosa USA](project_it_track_pivot.md) — third CV at output/cv-min-han-li-it.tex; CC Lab reframed as HPC sysadmin, AZ-900 in progress
+- [Formosa Plastics — pending Qs to sharpen CV bullets](project_formosa_questions.md) — 5 Qs (hybrid model type, process unit, scale meaning, AutoML vs meta-learning, metric); do NOT fabricate
+- [NTU CC Lab — RL geometry optimization paper](project_cc_lab_paper.md) — user did foundational work, left lab, published as Chang & Li JCTC 2023 (user NOT an author); interview-prep talking points + paper stats
+- [Pebble — AI Psychologist startup](project_pebble_ai_psychologist.md) — flagship agentic project; CBT agent, skill-as-node + safety stack + 95 tests; strongest asset for AI/LLM roles; repo private
+- [Never use em-dashes — reads as AI](feedback_no_em_dashes.md) — strong preference; replace em-dashes with commas/colons/sentence breaks. Same applies to parens and tildes in bullets.

@@ -1,0 +1,170 @@
+%-------------------------
+% Resume in LaTeX -- IT / System Administration track
+% Tailored for Min-Han Li, Formosa Plastics USA application
+% Template: Jake Gutierrez / sb2nov ; MIT License
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Min-Han Li (Wesley)} \\ \vspace{1pt}
+    \small +1-781-475-7402 $|$ \href{mailto:minhan.li.wesley@gmail.com}{\underline{minhan.li.wesley@gmail.com}} $|$
+    \href{https://linkedin.com/in/minhanliwesley}{\underline{linkedin.com/in/minhanliwesley}} $|$
+    San Jose, CA
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Computer Science}{09/2024 -- 04/2026}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{Coursework: Cloud Computing, Distributed Systems, Object-Oriented Design}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {B.S., Double Major in Computer Science and Chemical Engineering}{09/2016 -- 05/2022}
+
+  \resumeSubHeadingListEnd
+
+%-----------IT EXPERIENCE-----------
+\section{IT \& Infrastructure Experience}
+ \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Network and System Administration, NTU CSIE 2311/1310}}{Spring 2022}
+      \resumeItemListStart
+        \resumeItem{Configured \textbf{pfSense} firewall, \textbf{LDAP} directory service, \textbf{DNS}, \textbf{NFS} shares, and Apache web hosting on bare-metal Linux as graded lab assignments}
+        \resumeItem{Set up Cisco managed switches, partitioned storage, built virtualized environments with \textbf{Docker} and \textbf{virsh/KVM}, and wrote shell scripts for system automation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant, IT Infrastructure}{06/2020 -- 12/2020}
+      {Computational Chemistry Lab, NTU $|$ Linux, PBS, ZFS, Bash, ufw}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Administered \textbf{8-node} Linux HPC cluster, 1 head and 7 compute nodes running PBS scheduler, supporting \textbf{10} researchers; managed user accounts, SSH keys, and filesystem permissions}
+        \resumeItem{Maintained automated weekly ZFS snapshot backups, verified recoverability on demand, and ran SQL user management and backup tasks for lab databases}
+        \resumeItem{Provided tier-1 and tier-2 support for cluster jobs, software installs, and account issues; operated ufw firewall and wrote Bash automation for routine maintenance}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SOFTWARE EXPERIENCE-----------
+\section{Software Engineering Experience}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{05/2025 -- 11/2025}
+      {ByteDance (TikTok) $|$ Go, Python, SQL, Redis, Docker}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Shipped on-call diagnostic bot in Go serving \textbf{200+} internal users, cutting average ticket resolution time \textbf{50\%}, from 7 days to 3.5 days, by auto-aggregating relevant past incidents at ticket creation}
+        \resumeItem{Built \textbf{6+} Go services invoked as tools by the diagnostic agent: permission checks, access verification, log search, and bug filing, turning a chat interface into a programmatic action layer for non-technical staff}
+        \resumeItem{Enabled self-service for \textbf{30+} weekly ad-platform issues via RAG-backed knowledge base, automating \textbf{50\%} of common incidents and eliminating dependency on on-call engineers for routine tickets}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{11/2024 -- 01/2025}
+      {ReMo $|$ Go, FastAPI, Docker, AWS ECS, API Gateway}{Portland, ME}
+      \resumeItemListStart
+        \resumeItem{Containerized backend services with Docker and deployed to AWS ECS behind API Gateway, achieving high availability with health-checked rolling updates}
+        \resumeItem{Built Go and FastAPI services achieving sub-3-second end-to-end latency for a multi-stage OCR and metadata extraction pipeline}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Industrial Collaboration, Formosa Plastics x NTU CC Lab}{01/2021 -- 06/2021}
+      {Process simulation tooling for new US production plant $|$ Python, Flask, React, Aspen Plus, Cantera}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Built and deployed an internal web tool for Formosa engineers designing a new US production plant, with React frontend and Python Flask backend wrapping the \textbf{Cantera} kinetic simulator, accelerating PFR scenario evaluation \textbf{3$\times$} over Aspen Plus}
+        \resumeItem{Trained an AutoML-tuned neural network as a residual correction on Aspen Plus simulations using \textbf{80K} real-plant measurements, raising EDC cracker outlet prediction agreement from \textbf{80\%} to \textbf{95\%}, and scaled the correction across Formosa's full \textbf{18-reactor} production cascade}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{Cloud \& Infrastructure}{: Microsoft Azure, AZ-900 in progress, AWS, GCP, App Service, Application Insights} \\
+\textbf{Systems \& Virtualization}{: Linux, HPC with PBS, Windows Server learning, Docker, virsh/KVM} \\
+\textbf{Networking}{: TCP/IP, DNS, NFS, LDAP, VPN, ufw, pfSense, Cisco switching} \\
+\textbf{Scripting \& Automation}{: Bash, Python, PowerShell learning, Go} \\
+\textbf{Databases}{: SQL Server user management and backup, MySQL, PostgreSQL, Redis, Cosmos DB} \\
+\textbf{Operations}{: Backup and recovery, tier-1 and tier-2 support, monitoring, on-call response}
+    }}
+ \end{itemize}
+
+\end{document}

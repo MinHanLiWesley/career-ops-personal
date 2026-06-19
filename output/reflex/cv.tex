@@ -1,0 +1,158 @@
+%-------------------------
+% Resume in LaTeX — Reflex Software Engineer track
+% Author : Jake Gutierrez (template) ; tailored for Min-Han Li
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Min-Han Li} \\ \vspace{1pt}
+    \small +1-781-475-7402 $|$ \href{mailto:minhan.li.wesley@gmail.com}{\underline{minhan.li.wesley@gmail.com}} $|$
+    \href{https://linkedin.com/in/minhanliwesley}{\underline{LinkedIn}} $|$
+    \href{https://github.com/MinHanLiWesley}{\underline{GitHub}} $|$
+    San Jose, CA
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Computer Science, Minor in Digital Media}{09/2024 -- 04/2026}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{Coursework: Building Scalable Distributed Systems, Cloud Computing, Object-Oriented Design}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {B.S., Double Major in Computer Science and Chemical Engineering}{09/2016 -- 05/2022}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{05/2025 -- 11/2025}
+      {ByteDance (TikTok) $|$ Python, Go, RAG, Multi-Agent, LLM Tools, Redis}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Shipped AI-powered on-call diagnostic bot in Go serving \textbf{200+} internal users, reducing average resolution time \textbf{50\%} (7$\rightarrow$3.5 days) by auto-aggregating data and retrieving past incidents at ticket creation}
+        \resumeItem{Enabled knowledge-base-driven self-service powered by RAG and LLM-based routing that automates \textbf{50\%} of 30+ weekly issues, eliminating dependency on on-call engineers for common incidents}
+        \resumeItem{Developed \textbf{5+} Go services that the diagnostic LLM agent invokes as tools for permission verification, access checks, log lookup, and bug filing, behind a unified card interface}
+        \resumeItem{Designed multi-agent diagnostic workflows from internal runbooks, reducing manual escalations previously involving \textbf{10+} specialists per incident}
+        \resumeItem{Built knowledge pipeline converting resolved incidents into searchable articles via LLM chat summarization and RAG, with Redis caching to minimize query latency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{11/2024 -- 01/2025}
+      {ReMo $|$ Python, Go, FastAPI, YOLOv11, React, AWS ECS $|$ \href{https://github.com/MinHanLiWesley/book-spine-recognition}{\underline{GitHub}}}{Portland, ME}
+      \resumeItemListStart
+        \resumeItem{Delivered ReMo's MVP for fundraising: a \textbf{90\%} accurate book spine recognition pipeline combining YOLOv11 detection, Internvl recognition, and custom LLM-based metadata extraction}
+        \resumeItem{Achieved \textbf{sub-3s} end-to-end inference latency for the multi-stage OCR and metadata extraction system by building Python and Go backend services with FastAPI}
+        \resumeItem{Optimized React frontend bundle size and rendering performance with lazy-loading and code-splitting, reducing initial page load time by \textbf{25\%}}
+        \resumeItem{Containerized and deployed services via Docker, AWS ECS, and API Gateway for high availability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research \& Development Intern}{07/2022 -- 08/2022}
+      {Acer $|$ Python, PyTorch, OpenVINO, ONNX, YOLOv7, FaceNet}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Built a real-time meeting assistant POC in Python performing face and QR recognition under \textbf{300ms} latency for up to \textbf{6 concurrent users}, combining PyTorch model training, OpenVINO quantization, and async inference}
+        \resumeItem{Reduced model latency by \textbf{50\%} through INT8 quantization and ONNX conversion for CPU deployment}
+        \resumeItem{Submitted as a \textbf{patent} for hardware-level integration in Acer laptops, with YOLOv7 and FaceNet models optimized for on-device CPU inference}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{01/2021 -- 06/2021}
+      {Formosa Plastics $|$ Python, React, Flask, PyTorch, AutoML, Cantera}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Shipped a full-stack ML product end-to-end for Formosa engineers designing a new production facility, owning data pipeline, model training, Flask backend, and React frontend}
+        \resumeItem{Reduced model prediction error \textbf{75\%} and accelerated the deployed pipeline \textbf{3$\times$} over the prior toolchain by training an AutoML-tuned residual neural network on \textbf{80K} production measurements}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\small B.-C. Ke, \textbf{M.-H. Li}, et al. \textit{TurnAhead: Designing 3-DoF Rotational Haptic Cues to Improve First-person Viewing (FPV) Experiences.} \textbf{CHI 2023, Honorable Mention Award}. Prototyped a VR haptic feedback system in Unity / Meta Quest 2 / Arduino with 3D-printed hardware; validated through 4 user studies with 30+ participants. \href{https://dl.acm.org/doi/10.1145/3544548.3581443}{doi:10.1145/3544548.3581443}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{AI \& ML}{: PyTorch, RAG, LLM tooling, agentic systems, multi-agent workflows, scikit-learn, XGBoost, TensorFlow, ONNX, OpenVINO, quantization} \\
+\textbf{Python \& Backend}{: Python, FastAPI, Flask, Go, Docker, Kubernetes, Git, AWS, GCP, Azure, Redis, PostgreSQL, MySQL, MongoDB, Spark} \\
+\textbf{Frontend \& Other}{: TypeScript, JavaScript, React, Java, C++, Scala}
+    }}
+ \end{itemize}
+
+\end{document}

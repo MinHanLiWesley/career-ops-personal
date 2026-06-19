@@ -1,0 +1,753 @@
+# Pipeline Inbox — Pending URLs
+
+Seeded 2026-04-21 from the sibling `/Users/liminhan/Desktop/job/` agent's top-scored jobs (eval_score ≥ 7, Analyst agent scoring). Liveness verified via Playwright 2026-04-21 — 3 expired URLs removed.
+
+Run `/career-ops pipeline` to process these through full evaluation + tailored LaTeX CV + tracker.
+
+## High-Priority (score 9/10 in sibling agent)
+
+- https://lifeattiktok.com/search/7532009150009755911 — TikTok — Software Engineer Graduate (Capital Platform) 2026 Start
+- https://lifeattiktok.com/search/7531175534148045063 — TikTok — Software Engineer Graduate 2026 Start
+- https://lifeattiktok.com/search/7535601047362029831 — TikTok — SWE Graduate (Monetization Technology — Ads Creator Monetization)
+- https://jobs.bytedance.com/en/position/7540437542564301063/detail — ByteDance — SWE Graduate (Cloud Native Infrastructure) 2026 Start
+- https://lifeattiktok.com/search/7535215880842791176 — TikTok — SWE Graduate (Data Arch — AI/ML Infrastructure)
+- https://lifeattiktok.com/search/7538213896365689096 — TikTok — SWE Graduate (Commerce Ads)
+- https://lifeattiktok.com/search/7538318336657606930 — TikTok — SWE Graduate (Media Platform)
+- https://lifeattiktok.com/search/7538325343598741767 — TikTok — SWE Graduate (Foundation Platform)
+- https://joinbytedance.com/search/7536272435440716040 — ByteDance — SWE Graduate (Dev Infra) 2026 Start
+- https://joinbytedance.com/search/7532538236133902599 — ByteDance — SWE Graduate (Applied Machine Learning — Enterprise) 2026 Start
+- https://joinbytedance.com/search/7535233571066349842 — ByteDance — SWE Graduate (Applied Machine Learning — MLDev) 2026 Start
+
+## Good Matches (score 8/10 in sibling agent)
+
+- https://stripe.com/jobs/search?gh_jid=7292520 — Stripe — Backend Engineer
+
+## Expired (removed 2026-04-21)
+
+- ~~university-uber.icims.com/jobs/147250/job — Uber Graduate 2025 SWE I~~ (HTTP 410)
+- ~~uber.com/global/en/careers/list/156116/ — Uber SWE 1~~ (HTTP 404)
+- ~~boards.greenhouse.io/purestorage/jobs/7258968 — Pure Storage Graduate SWE~~ (redirect/error)
+
+## Pendientes
+
+- [ ] https://www.asana.com/jobs/apply/7595104?gh_jid=7595104 | Asana | Software Engineer, CI/CD
+- [ ] https://job-boards.greenhouse.io/attentive/jobs/4195625009 | Attentive | Software Engineer I, AI Product
+- [ ] https://job-boards.greenhouse.io/attentive/jobs/4224514009 | Attentive | Software Engineer II, BI Tooling and Platform
+- [ ] https://job-boards.greenhouse.io/attentive/jobs/4169520009 | Attentive | Software Engineering, Customer Success
+- [ ] https://boards.greenhouse.io/figma/jobs/5840332004?gh_jid=5840332004 | Figma | Data Platform Engineer
+- [ ] https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004 | Figma | Software Engineer, AI Platforms
+- [ ] https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004 | Figma | Software Engineer, AI Product
+- [ ] https://boards.greenhouse.io/figma/jobs/5552530004?gh_jid=5552530004 | Figma | Software Engineer, C++
+- [ ] https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004 | Figma | Software Engineer, Code Platform
+- [ ] https://boards.greenhouse.io/figma/jobs/5551686004?gh_jid=5551686004 | Figma | Software Engineer, Data Infrastructure
+- [ ] https://boards.greenhouse.io/figma/jobs/5790627004?gh_jid=5790627004 | Figma | Software Engineer, Developer Experience
+- [ ] https://boards.greenhouse.io/figma/jobs/5552549004?gh_jid=5552549004 | Figma | Software Engineer, Distributed Systems
+- [ ] https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004 | Figma | Software Engineer, Full Stack
+- [ ] https://boards.greenhouse.io/figma/jobs/5552522004?gh_jid=5552522004 | Figma | Software Engineer, Graphics & Media
+- [ ] https://boards.greenhouse.io/figma/jobs/5552560004?gh_jid=5552560004 | Figma | Software Engineer, Growth & Monetization
+- [ ] https://boards.greenhouse.io/figma/jobs/5551532004?gh_jid=5551532004 | Figma | Software Engineer, Machine Learning
+- [ ] https://boards.greenhouse.io/figma/jobs/5551649004?gh_jid=5551649004 | Figma | Software Engineer, Production Engineering
+- [ ] https://job-boards.greenhouse.io/smartsheet/jobs/7712828 | Smartsheet | Software Engineer II, FedRamp (Remote Eligible)
+- [ ] https://job-boards.greenhouse.io/smartsheet/jobs/7732551 | Smartsheet | Software Engineer I - Secure Platform Operations (Remote Eligible)
+- [ ] https://jobs.dropbox.com/listing/7569140?gh_jid=7569140 | Dropbox | Full Stack Software Engineer, Dash Experiences
+- [ ] https://www.pinterestcareers.com/jobs/?gh_jid=6121450 | Pinterest | Machine Learning Engineer, Core Engineering
+- [ ] https://www.pinterestcareers.com/jobs/?gh_jid=6121543 | Pinterest | Machine Learning Engineer, Monetization Engineering
+- [ ] https://www.pinterestcareers.com/jobs/?gh_jid=7494666 | Pinterest | Security Software Engineer II, Corporate Security
+- [ ] https://www.pinterestcareers.com/jobs/?gh_jid=7770914 | Pinterest | Security Software Engineer II, Detection and Response
+- [ ] https://www.pinterestcareers.com/jobs/?gh_jid=6816337 | Pinterest | Software Engineer I, Backend
+- [ ] https://www.pinterestcareers.com/jobs/?gh_jid=7642265 | Pinterest | Software Engineer, tvScientific
+- [ ] https://job-boards.greenhouse.io/twilio/jobs/7702644 | Twilio | Machine Learning Engineer
+- [ ] https://job-boards.greenhouse.io/twilio/jobs/7605743 | Twilio | Software Engineer
+- [ ] https://job-boards.greenhouse.io/twilio/jobs/7188174 | Twilio | Software Engineer (L2)
+- [ ] https://job-boards.greenhouse.io/twilio/jobs/7301401 | Twilio | Software Engineer (L3)
+- [ ] https://job-boards.greenhouse.io/twilio/jobs/7724877 | Twilio | Software Engineer L3 Phone Numbers
+- [ ] https://stripe.com/jobs/search?gh_jid=7232592 | Stripe | Backend Engineer, Payments and Risk
+- [ ] https://stripe.com/jobs/search?gh_jid=7235875 | Stripe | Backend Engineer, Privy
+- [ ] https://stripe.com/jobs/search?gh_jid=7462961 | Stripe | Infrastructure Engineer, Privy
+- [ ] https://stripe.com/jobs/search?gh_jid=7079044 | Stripe | Machine Learning Engineer, Payments ML Accelerator
+- [ ] https://stripe.com/jobs/search?gh_jid=7629052 | Stripe | Machine Learning Engineer, Stripe Assistant 
+- [ ] https://stripe.com/jobs/search?gh_jid=7216668 | Stripe | PhD Machine Learning Engineer, New Grad
+- [ ] https://stripe.com/jobs/search?gh_jid=7788088 | Stripe | Software Engineer
+- [ ] https://stripe.com/jobs/search?gh_jid=7277110 | Stripe | Software Engineer, Bridge
+- [ ] https://stripe.com/jobs/search?gh_jid=7812279 | Stripe | Software Engineer L2
+- [ ] https://stripe.com/jobs/search?gh_jid=7761694 | Stripe | Software Engineer, Product Security Data Platforms
+- [ ] https://stripe.com/jobs/search?gh_jid=7507904 | Stripe | Software Engineer - Smart Contract, Bridge
+- [ ] https://job-boards.greenhouse.io/klaviyocampus/jobs/7621072003 | Klaviyo | AI Engineer I
+- [ ] https://job-boards.greenhouse.io/klaviyocampus/jobs/7484845003 | Klaviyo | Machine Learning Engineer I
+- [ ] https://job-boards.greenhouse.io/klaviyocampus/jobs/7602542003 | Klaviyo | Software Engineer I
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7673126003 | Affirm | Software Engineer I, Backend (Purchasing Power Experience)
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7685236003 | Affirm | Software Engineer I, Full-Stack (Home and Search Experience)
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7656872003 | Affirm | Software Engineer II
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7597920003 | Affirm | Software Engineer II, Backend (Credit Decisioning) 
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7543978003 | Affirm | Software Engineer II, Backend (Identity Decisioning)   
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7687973003 | Affirm | Software Engineer II, Frontend (Purchasing Integrations)
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7694294003 | Affirm | Software Engineer II (ML Feature Platform)
+- [ ] https://job-boards.greenhouse.io/affirm/jobs/7647925003 | Affirm | Software Engineering Apprentice, Full-Stack
+- [ ] https://boards.greenhouse.io/robinhood/jobs/7754143?t=gh_src=&gh_jid=7754143 | Robinhood | Backend Software Engineer, Credit Cards & Banking
+- [ ] https://www.coinbase.com/careers/positions/7595352?gh_jid=7595352 | Coinbase | Software Engineer, DevSec
+- [ ] https://www.coinbase.com/careers/positions/6233713?gh_jid=6233713 | Coinbase | Software Engineer - Full Stack (EAA - Compliance)
+- [ ] https://jobs.ashbyhq.com/ramp/4e64ab86-4e30-403b-b1b9-41dc052570ce | Ramp | Software Engineer, Frontend
+- [ ] https://jobs.ashbyhq.com/ramp/fc971889-db1d-4a20-a25e-f282f9296936 | Ramp | University Grad | Customer Experience Agent
+- [ ] https://jobs.ashbyhq.com/ramp/bca0346c-b843-4795-96df-6091f51e421b | Ramp | Software Engineer, Data Platform 
+- [ ] https://jobs.ashbyhq.com/ramp/0ea43bb5-201b-4626-ae19-1d7ae3a3193f | Ramp | Software Engineer, Infrastructure
+- [ ] https://jobs.ashbyhq.com/ramp/d1183b00-6590-4fe4-a585-28d84e578fe3 | Ramp | Software Engineer, Stablecoins
+- [ ] https://jobs.ashbyhq.com/ramp/a1229aec-1105-4c47-8533-b912e732ed89 | Ramp | University Grad | Software Engineer | Frontend
+- [ ] https://jobs.ashbyhq.com/ramp/f5b60cf1-c0ec-42c1-89db-ece853e998ab | Ramp | Software Engineer, Growth Platform
+- [ ] https://jobs.ashbyhq.com/ramp/0c9e3e0f-54df-4252-a17b-b506e954225b | Ramp | Software Engineer, Product Growth
+- [ ] https://jobs.ashbyhq.com/ramp/deca582c-a1d0-4705-9975-60aed81ba89f | Ramp | Software Engineer, Forward Deployed AI
+- [ ] https://jobs.ashbyhq.com/ramp/9320454f-f2ca-4c19-82d2-b51b8d75fd3a | Ramp | Software Engineer, Argentina
+- [ ] https://jobs.ashbyhq.com/ramp/5fe4c64e-9336-4384-9e6f-ff32eeb3fdae | Ramp | Software Engineer, Core Product
+- [ ] https://jobs.ashbyhq.com/ramp/d204e136-2749-42de-82b4-88a0dd352090 | Ramp | Applied AI Engineer
+- [ ] https://jobs.ashbyhq.com/ramp/1b191a1d-bb39-4b4a-b6bf-224e66ead1eb | Ramp | Software Engineer, Financial Systems
+- [ ] https://jobs.ashbyhq.com/ramp/8fa367de-71ba-409e-befd-175a163acb1b | Ramp | Software Engineer, Fraud & Identity
+- [ ] https://jobs.ashbyhq.com/ramp/5598f7b8-4ae2-4105-a2b4-2d0f55c54c40 | Ramp | Software Engineer, Risk
+- [ ] https://jobs.ashbyhq.com/ramp/ed2e9a94-f58e-4ff8-8853-afd977850d43 | Ramp | Software Engineer, Accounting
+- [ ] https://jobs.ashbyhq.com/ramp/2a4968ae-220c-471b-b890-a011de570bbb | Ramp | Software Engineer, Bill Pay & Procurement
+- [ ] https://jobs.ashbyhq.com/ramp/b42cce4b-8fa9-4e8d-892d-3a29a7afb909 | Ramp | Software Engineer, AI DevX
+- [ ] https://jobs.ashbyhq.com/ramp/4bb1ccd6-cf0d-48a8-90f6-05d61617d0d4 | Ramp | Software Engineer, Ramp Travel
+- [ ] https://jobs.ashbyhq.com/ramp/42527ca9-03b9-499e-a5c4-18e4245af138 | Ramp | Software Engineer, Agent Developer Platform
+- [ ] https://jobs.ashbyhq.com/ramp/7bfa613e-151c-469b-9973-c89ee3d14838 | Ramp | Backend Engineer, Ops
+- [ ] https://jobs.ashbyhq.com/ramp/f2d10bdf-0906-47eb-96fb-0efe6f81d8a3 | Ramp | Software Engineer, Guest Travel
+- [ ] https://job-boards.greenhouse.io/gusto/jobs/7615358 | Gusto | Retirement Developer Infrastructure Engineer
+- [ ] https://job-boards.greenhouse.io/reddit/jobs/7131932 | Reddit | Machine Learning Engineer
+- [ ] https://job-boards.greenhouse.io/discord/jobs/8487457002 | Discord | Software Engineer- Database Infrastructure
+- [ ] https://job-boards.greenhouse.io/discord/jobs/8396927002 | Discord | Software Engineer, Data Platform
+- [ ] https://job-boards.greenhouse.io/discord/jobs/8475544002 | Discord | Software Engineer, Safety Experience
+- [ ] https://careers.roblox.com/jobs/7557909?gh_jid=7557909 | Roblox | [2026] Software Engineer, Creator - Early Career
+- [ ] https://careers.roblox.com/jobs/6606035?gh_jid=6606035 | Roblox | Distinguished Machine Learning Engineer - Safety
+- [ ] https://careers.roblox.com/jobs/7535750?gh_jid=7535750 | Roblox | Software Engineer, Ads & Brands
+- [ ] https://careers.roblox.com/jobs/7786397?gh_jid=7786397 | Roblox | Software Engineer, Creator Translation
+- [ ] https://careers.roblox.com/jobs/7711780?gh_jid=7711780 | Roblox | Software Engineer, User Co-Experience
+- [ ] https://careers.roblox.com/jobs/7767204?gh_jid=7767204 | Roblox | Software Engineer, User Sharing
+- [ ] https://careers.roblox.com/jobs/7561739?gh_jid=7561739 | Roblox | Systems Software Engineer - Game Engine Network (C++)
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8369609002 | Twitch | Software Development Engineer, Onboarding/Payouts
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8186269002 | Twitch | Software Engineer
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8345959002 | Twitch | Software Engineer, Creator Sponsorships
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8162197002 | Twitch | Software Engineer I - Ads Demand Enablement
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8459320002 | Twitch | Software Engineer I, Commerce Engineering
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8468673002 | Twitch | Software Engineer I, Community Growth
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8499608002 | Twitch | Software Engineer II, Safety
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8417224002 | Twitch | Software Engineer I, Monetization ML
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8470752002 | Twitch | Software Engineer I, Streamer Monetization Experience
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8183360002 | Twitch | Software Engineer, ML Products
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8504990002 | Twitch | Software Engineer, Safety
+- [ ] https://job-boards.greenhouse.io/thetradedesk/jobs/5043258007 | The Trade Desk | Full Stack Software Engineer II
+- [ ] https://job-boards.greenhouse.io/thetradedesk/jobs/5102422007 | The Trade Desk | Software Engineer II
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4791891101 | StubHub | Software Engineer II - Active Support
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792615101 | StubHub | Software Engineer II – Consumer Experience (Full-Stack)
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4787592101 | StubHub | Software Engineer II - Fulfillment
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825351101 | StubHub | Software Engineer II - Marketplace Operations
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825352101 | StubHub | Software Engineer II - Open Distribution (Backend)
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825353101 | StubHub | Software Engineer II - Open Distribution (Frontend)
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4824094101 | StubHub | Software Engineer II - Supply Platform
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792584101 | StubHub | Software Engineer II - Web Foundations
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4796066101 | StubHub | Software Engineer I (New Grad) - Consumer Experience
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7779598 | MongoDB | Software Engineer 3
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7551186 | MongoDB |  Software Engineer 3, Atlas Data Federation Customer Experience
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7523920 | MongoDB | Software Engineer 3, Atlas Search Systems
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7235322 | MongoDB | Software Engineer 3, Search Systems Replication & Routing
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7672660 | MongoDB | Software Engineer, Networking & Observability
+- [ ] https://jobs.elastic.co/jobs?gh_jid=7607148&gh_jid=7607148 | Elastic | Elastic AI Engineer
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8443325002 | GitLab | Intermediate Backend Engineer, SRM: Security Platform Management
+- [ ] https://jobs.ashbyhq.com/supabase/2ed5e80d-438b-47a5-9efe-12d168b8de81 | Supabase | Software Engineer - Support Tooling (APAC/AMER)
+- [ ] https://jobs.ashbyhq.com/supabase/9073c0cd-2545-473a-b2ac-63e4615c69b5 | Supabase | Platform Engineer: Data
+- [ ] https://jobs.ashbyhq.com/supabase/8a49c4b3-a48b-4d6a-9c3c-36943fcd0dfb | Supabase | Software Engineer - Supavisor
+- [ ] https://jobs.ashbyhq.com/supabase/e569b7f7-fa8f-4139-86f6-4f52b456882d | Supabase | Software Engineer (Go) - Auth Product
+- [ ] https://jobs.ashbyhq.com/supabase/77439e1c-e4eb-483c-aa8e-7686913886e3 | Supabase | Software Engineer (Go) - Auth
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/4886734?gh_jid=4886734 | Cloudflare | Distributed Systems Engineer - Data Platform - Analytical Database Platform
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7462803?gh_jid=7462803 | Cloudflare | Distributed Systems Engineer - Data Platform - Analytics and Alerts
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801 | Cloudflare | Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7340469?gh_jid=7340469 | Cloudflare | Distributed Systems Engineer - Data Platform - Logs and Audit Logs
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7309174?gh_jid=7309174 | Cloudflare | Software Engineer, Cloudforce One
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7088208?gh_jid=7088208 | Cloudflare | Software Engineer: Distributed Systems (Infrastructure)
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7336735?gh_jid=7336735 | Cloudflare | Software Engineer, Enterprise Integrations
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7340134?gh_jid=7340134 | Cloudflare | Software Engineer, Global Resource Management
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/6885717?gh_jid=6885717 | Cloudflare | Software Engineer, Growth 
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/6621615?gh_jid=6621615 | Cloudflare | Software Engineer, Identity Access Management
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7404432?gh_jid=7404432 | Cloudflare | Software Engineer - Load Balancing 
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310 | Cloudflare | Software Engineer, Network Performance & Reliability
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7495224?gh_jid=7495224 | Cloudflare | Software Engineer - Registrar  
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/6980179?gh_jid=6980179 | Cloudflare | Software Engineer- Resiliency
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7302931?gh_jid=7302931 | Cloudflare | Software Engineer: Resiliency - Deploy at Scale
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7053411?gh_jid=7053411 | Cloudflare | Software Engineer - Security Platform
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7469429?gh_jid=7469429 | Cloudflare | Software Engineer - Traffic Management 
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/5733639?gh_jid=5733639 | Cloudflare | Software Engineer, Workers Builds & Automation
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7377424?gh_jid=7377424 | Cloudflare | Software Engineer, Workers Deploy & Config
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7505637?gh_jid=7505637 | Cloudflare | Software Engineer, Workers Observability
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5068226008 | Anthropic | Applied AI Engineer, Beneficial Deployments
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5057647008 | Anthropic | Applied AI Engineer (Digital Natives Business) 
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5111942008 | Anthropic | Applied AI Engineer, Life Sciences (Beneficial Deployments)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5073277008 | Anthropic | Applied AI Engineer (Startups)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5116927008 | Anthropic | Claude Evangelist, Applied AI (Startups)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4985877008 | Anthropic | Forward Deployed Engineer, Applied AI
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5079562008 | Anthropic | Forward Deployed Engineer, Applied AI (Federal Civilian) 
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5186067008 | Anthropic | Full-Stack Software Engineer, Reinforcement Learning
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5030680008 | Anthropic | Infrastructure Engineer, Sandboxing
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4778843008 | Anthropic | ML Infrastructure Engineer, Safeguards
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5098025008 | Anthropic | Model Quality Software Engineer, Claude Code
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4595463008 | Anthropic | Security Software Engineer, Detection & Response Platform
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5123039008 | Anthropic | Software Engineer, Account Abuse
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5168829008 | Anthropic | Software Engineer, Cloud Inference Safeguards
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5108982008 | Anthropic | Software Engineer, Compute Efficiency
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5063007008 | Anthropic | Software Engineer, Cybersecurity Products
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4980420008 | Anthropic | Software Engineer, Desktop
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5174743008 | Anthropic | Software Engineer, Full-stack
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5109273008 | Anthropic | Software Engineer, Human Data Interface
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5111745008 | Anthropic | Software Engineer, Inference Deployment
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5157844008 | Anthropic | Software Engineer, Platform
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5191226008 | Anthropic | Software Engineer, Research Data Platform
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4951844008 | Anthropic | Software Engineer, Safeguards
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5083039008 | Anthropic | Software Engineer, Sandboxing
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5025591008 | Anthropic | Software Engineer, Sandboxing (Systems)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4673416008 | Anthropic | Software Engineer, UI Platform
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5017903008 | Anthropic | Technical Deployment, Applied AI
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5026097008 | Anthropic | UI Software Engineer, Claude.ai Consumer Product 
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4514173005 | Scale AI | Applied AI Engineer, Enterprise GenAI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4629589005 | Scale AI | Evals Engineer, Applied AI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4593571005 | Scale AI | Forward Deployed Engineer, GenAI 
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4665557005 | Scale AI | Infrastructure Software Engineer, Enterprise GenAI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4625345005 | Scale AI |  Machine Learning Research Engineer, Agent Data Foundation - Enterprise GenAI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4625344005 | Scale AI | Machine Learning Research Engineer, Agents - Enterprise GenAI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4490301005 | Scale AI | Machine Learning Research Engineer, GenAI Applied ML
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4625341005 | Scale AI | Machine Learning Systems Research Engineer, Agent Post-training - Enterprise GenAI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4481921005 | Scale AI | Mission Software Engineer, Public Sector
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4676936005 | Scale AI | Software Engineer, AI Developer Tooling
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4673771005 | Scale AI | Software Engineer, ARC Team
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4513943005 | Scale AI | Software Engineer, Enterprise AI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4363623005 | Scale AI | Software Engineer, Frontier AI Infrastructure
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4591300005 | Scale AI | Software Engineer, Gen AI
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4605996005 | Scale AI | Software Engineer - New Grad
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4594879005 | Scale AI | Software Engineer, Platform
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4302243005 | Scale AI | Software Engineer, Public Sector
+- [ ] https://job-boards.greenhouse.io/scaleai/jobs/4618065005 | Scale AI | Software Engineer, Robotics & Autonomous Systems
+- [ ] https://jobs.ashbyhq.com/cohere/1fa01a03-9253-4f62-8f10-0fe368b38cb9 | Cohere | Applied AI Engineer – Agentic Workflows
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8335860002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8415203002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=7737233002 | Databricks | Software Engineer - Backend
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8202670002 | Databricks | Software Engineer - GenAI inference 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8133691002 | Databricks | Software Engineer - New Grad (2026 Start) - Aarhus
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002 | Databricks | Systems PhD - Software Engineer 
+- [ ] https://jobs.ashbyhq.com/sierra/b16462e4-ce32-4ce9-b788-0a8f0f096361 | Sierra | Software Engineer, Product
+- [ ] https://jobs.ashbyhq.com/sierra/d77487f9-bab3-44c6-be18-744e7125c8b3 | Sierra | Software Engineer, Platform
+- [ ] https://jobs.ashbyhq.com/sierra/e9f5fdb6-91ee-4c55-9230-41ec8865650e | Sierra | Software Engineer, Agent
+- [ ] https://jobs.ashbyhq.com/sierra/f391b10c-7a4a-42b4-9887-dd32b31d6e4e | Sierra | Software Engineer, Frontend
+- [ ] https://jobs.ashbyhq.com/sierra/f4319197-e898-4756-a7f2-af884fe1e0c7 | Sierra | Software Engineer, Intelligence
+- [ ] https://jobs.ashbyhq.com/sierra/55e76105-7f8d-42e8-b1d1-120b7b83922e | Sierra | Software Engineer, Infrastructure
+- [ ] https://jobs.ashbyhq.com/sierra/9738d0f0-13be-4e89-9fba-505e7cac288f | Sierra | APX (New Grad)
+- [ ] https://jobs.ashbyhq.com/sierra/6a75b530-b7bb-4439-bb67-37b4f2b75b96 | Sierra | Software Engineer, Agent (New Grad)
+- [ ] https://jobs.ashbyhq.com/sierra/0c892d11-9f19-4b8d-9c2b-409346c52b7a | Sierra | Software Engineer, Agent Data Platform
+- [ ] https://jobs.ashbyhq.com/sierra/1bd9c1e7-a2aa-428d-9a31-1a4eed26391f | Sierra | Software Engineer, Voice
+- [ ] https://jobs.ashbyhq.com/sierra/2fdb200f-c5cf-420c-9997-5e5cea6e1e20 | Sierra | Software Engineer, Agent Studio
+- [ ] https://jobs.ashbyhq.com/sierra/000dad19-ab52-4790-9c32-ef72dfd2828b | Sierra | Software Engineer, Demo Platform
+- [ ] https://jobs.ashbyhq.com/sierra/5ed4bbfa-1c27-4242-be7f-b8dc4ce8c25f | Sierra | Software Engineer, Insights
+- [ ] https://jobs.ashbyhq.com/sierra/201c6046-acb5-4fd4-a685-e993f34ec0d1 | Sierra | Software Engineer, Security
+- [ ] https://jobs.ashbyhq.com/sierra/fc6eaada-479c-4ff6-be79-7e267b9ed2b4 | Sierra | Software Engineer, Identity & Enterprise Platform
+- [ ] https://jobs.ashbyhq.com/sierra/eb3ee157-3d2a-412a-88a2-e2cfc5647a66 | Sierra | Software Engineer, Agent - Healthcare
+- [ ] https://jobs.ashbyhq.com/sierra/d9c0aa93-e35d-4752-9cef-4c39dcad5365 | Sierra | Forward Deployed Infrastructure Engineer
+- [ ] https://jobs.ashbyhq.com/lindy/a5100dbe-d851-4544-bb4c-0428d77940eb | Lindy | Full Stack Software Engineer (Early Career)
+- [ ] https://jobs.ashbyhq.com/gigaml/cb74c445-322b-47fc-804c-b0565e18ca3a | Giga AI | Software Engineer (New Grads) - San Francisco
+- [ ] https://jobs.ashbyhq.com/gigaml/96f0c2f8-3d97-4763-ab46-b6af6ad8b2e7 | Giga AI | Software Engineer I / II - San Francisco
+- [ ] https://jobs.ashbyhq.com/gigaml/ba9b543d-e85c-4bd1-978b-f838d7a4062f | Giga AI | Software Engineer I / II - New York
+- [ ] https://jobs.ashbyhq.com/gigaml/7314c5c1-e3d0-4439-ad9f-b3b09d4dde51 | Giga AI | Software Engineer (New Grads) -  New York
+- [ ] https://jobs.ashbyhq.com/elevenlabs/6c4c57c1-ec72-42ba-af3a-eb7aebbde2e6 | ElevenLabs | Forward Deployed Engineer - Software Engineer
+- [ ] https://jobs.ashbyhq.com/openai/4476b271-4987-4bd4-aa1e-0e68ea683b10 | OpenAI | Research Scientist / Research Engineer — Early Career Cohort
+- [ ] https://jobs.ashbyhq.com/openai/10980026-e468-4516-958c-7c697793d1d4 | OpenAI | Software Engineer, Identity Platform 
+- [ ] https://jobs.ashbyhq.com/openai/f763c6b3-5167-4a67-b691-4c3fa2c44156 | OpenAI | Software Engineer, Data Infrastructure
+- [ ] https://jobs.ashbyhq.com/openai/2cba0d45-7a4f-4f38-ac73-3f8633bf0349 | OpenAI | Software Engineer, Developer Productivity
+- [ ] https://jobs.ashbyhq.com/openai/41d9d129-2e58-4ad3-be81-2e5096f4da4d | OpenAI | Software Engineer, Data Acquisition 
+- [ ] https://jobs.ashbyhq.com/openai/d4dcd344-40cf-44d6-a7dd-172118eb0842 | OpenAI | Software Engineer, Observability
+- [ ] https://jobs.ashbyhq.com/openai/340c0c22-8d8f-4232-b17e-f642b64c25c3 | OpenAI | Software Engineer, Collective Communication
+- [ ] https://jobs.ashbyhq.com/openai/1e4e9985-babf-4bd9-8fe8-a2016250780d | OpenAI | Software Engineer, Security Observability
+- [ ] https://jobs.ashbyhq.com/openai/d44c9f70-4aef-45a4-a36a-54fb65663ccb | OpenAI | Research Engineer, Applied AI Engineering
+- [ ] https://jobs.ashbyhq.com/openai/4ef5bf23-cf0e-4b97-a639-11f963c99b88 | OpenAI | Software Engineer, Financial Engineering
+- [ ] https://jobs.ashbyhq.com/openai/75420421-5a2a-4d99-8755-9eeff799de95 | OpenAI | Software Engineer, Real Time
+- [ ] https://jobs.ashbyhq.com/openai/991948b7-0305-4125-bb9a-625f5bc24189 | OpenAI | Software Engineer, Integrity Foundations
+- [ ] https://jobs.ashbyhq.com/openai/f4e8a433-ae96-44ac-a7f9-97070335395f | OpenAI | Software Engineer, Youth Well-Being
+- [ ] https://jobs.ashbyhq.com/openai/7809102e-e82a-4678-bf7c-221de8acc0d6 | OpenAI | Software Engineer, Fleet Management
+- [ ] https://jobs.ashbyhq.com/openai/a58add97-1968-4d5c-b504-ab62bea12df3 | OpenAI | Software Engineer, Fleet Infrastructure
+- [ ] https://jobs.ashbyhq.com/openai/d4780eac-03ad-4dae-861f-99af22b4287e | OpenAI | Software Engineer, Full Stack (People Innovation)
+- [ ] https://jobs.ashbyhq.com/openai/c1316397-25bb-4add-9e9d-0e3ea8ba929a | OpenAI | Software Engineer, Agent Infrastructure
+- [ ] https://jobs.ashbyhq.com/openai/633d5574-92e4-4327-9783-7ea831223dea | OpenAI | Software Engineer, Frontier Systems - Power Management
+- [ ] https://jobs.ashbyhq.com/openai/770d5c3f-4e72-4b49-aec4-d444e8ad7a64 | OpenAI | Software Engineer, Frontier Clusters Infrastructure
+- [ ] https://jobs.ashbyhq.com/openai/83b6755d-7785-4186-9050-5ef3ad127941 | OpenAI | Software Engineer, Model Inference
+- [ ] https://jobs.ashbyhq.com/openai/7649205e-20dc-4bb4-9358-69474a851132 | OpenAI | Software Engineer, Compute - Storage
+- [ ] https://jobs.ashbyhq.com/openai/00207abc-49b7-465c-a219-f7c1140f8047 | OpenAI | Forward Deployed Software Engineer - SF
+- [ ] https://jobs.ashbyhq.com/openai/1faee5e7-3b2f-4d8c-9a6f-ff0f2a4a42a7 | OpenAI | Software Engineer, Reliability 
+- [ ] https://jobs.ashbyhq.com/openai/ecf1abec-898c-4acb-a984-42858836a1ff | OpenAI | Machine Learning Engineer, Integrity
+- [ ] https://jobs.ashbyhq.com/openai/a90cdb7c-1c33-4fca-9a96-26c236006f14 | OpenAI | Software Engineer, Gov
+- [ ] https://jobs.ashbyhq.com/openai/d7efc55b-2fde-4d3f-ae34-2e467f02a57c | OpenAI | Software Engineer, Frontier Systems
+- [ ] https://jobs.ashbyhq.com/openai/9d11e1d8-af1d-413b-873f-d8fac2bdee99 | OpenAI | Full Stack Engineer, Fleet Scheduling
+- [ ] https://jobs.ashbyhq.com/openai/bd190cad-99ec-4fe7-8f8f-de96b5aa5969 | OpenAI | Software Engineer, Backend (Cooperative AI)
+- [ ] https://jobs.ashbyhq.com/openai/b9dee2a0-9bb3-447e-9bce-2b1bed784e5b | OpenAI | Software Engineer, AI Safety
+- [ ] https://jobs.ashbyhq.com/openai/07153f7c-7e8b-4283-a879-cb07a224e083 | OpenAI | Software Engineer, Privacy Infrastructure
+- [ ] https://jobs.ashbyhq.com/openai/460b4295-3803-4dda-983d-3b0fea0b0fc4 | OpenAI | Software Engineer, Habitat (Online Data)
+- [ ] https://jobs.ashbyhq.com/openai/43174eb6-0ffe-4744-9323-c7969e7ea2e1 | OpenAI | Backend Software Engineer, GTM Innovation 
+- [ ] https://jobs.ashbyhq.com/openai/f386b209-1259-4b79-bf5a-aa97fc7ce77b | OpenAI | Software Engineer, Accelerators
+- [ ] https://jobs.ashbyhq.com/openai/4d14449e-5e7f-45d4-b103-8776a6c87086 | OpenAI | Software Engineer, Inference - Multi Modal
+- [ ] https://jobs.ashbyhq.com/openai/4d6a5951-9838-434c-830a-22cb938ea228 | OpenAI | Software Engineer, Research - Human Data
+- [ ] https://jobs.ashbyhq.com/openai/f58cb1eb-9642-4a4d-a14d-d7a57d583a11 | OpenAI | Software Engineer, GPU Infrastructure - HPC
+- [ ] https://jobs.ashbyhq.com/openai/551b0d0d-46c2-42fb-bb05-46e2fba8d4db | OpenAI | Software Engineer, Identity Infrastructure Engineering
+- [ ] https://jobs.ashbyhq.com/openai/0da75470-7e1e-44c3-90df-6f93cf90b968 | OpenAI | Software Engineer, Payments
+- [ ] https://jobs.ashbyhq.com/openai/a5591da5-23f3-4926-ac8d-8d1c927e3004 | OpenAI | Backend Software Engineer, ChatGPT Enterprise
+- [ ] https://jobs.ashbyhq.com/openai/2b5e8e15-7952-4170-a927-2ad68e318ed6 | OpenAI | Software Engineer, Database Systems
+- [ ] https://jobs.ashbyhq.com/openai/21bfde35-ffec-42d2-a2c6-8a03dad789d5 | OpenAI | Software Engineer, Core Services
+- [ ] https://jobs.ashbyhq.com/openai/a20b7fc6-6f01-4618-ba35-37b40083f93e | OpenAI | Software Engineer, Caching Infrastructure
+- [ ] https://jobs.ashbyhq.com/openai/8a1b804f-b070-4c61-bd3d-cdf39ef9d935 | OpenAI | Software Engineer, Privacy
+- [ ] https://jobs.ashbyhq.com/openai/12342ebb-dcd4-45e2-b875-fc5447fdb7d8 | OpenAI | Software Engineer, Cloud Infrastructure 
+- [ ] https://jobs.ashbyhq.com/openai/e5691162-4e45-4dc6-a6bf-64f60ebf1ac4 | OpenAI | Linux Kernels Software Engineer
+- [ ] https://jobs.ashbyhq.com/openai/1ba666a4-0be2-4bd0-ad51-39ed7164c241 | OpenAI | Software Engineer, Quality & Developer Tools, Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/621bb104-9daa-4c9e-949a-03d5730334e8 | OpenAI | Software Engineer, Infrastructure Reliability
+- [ ] https://jobs.ashbyhq.com/openai/77bc0b3a-35c1-4ecf-99c7-1b3b19d959ca | OpenAI | Full Stack Software Engineer, Growth
+- [ ] https://jobs.ashbyhq.com/openai/2115c524-07dd-401c-8549-5598ce5cbc9c | OpenAI | Client Platform Engineer
+- [ ] https://jobs.ashbyhq.com/openai/e6d5ca02-f30b-4ac5-a69d-c947efb430f9 | OpenAI | Software Engineer, Research Developer Productivity
+- [ ] https://jobs.ashbyhq.com/openai/b7a2e30f-c5f6-4710-b53e-64d64bcce189 | OpenAI | Software Engineer, Data Infrastructure - Research
+- [ ] https://jobs.ashbyhq.com/openai/3d064454-c0c3-4225-bc2c-6d8c0f8735b2 | OpenAI | Backend Software Engineer (Evals) 
+- [ ] https://jobs.ashbyhq.com/openai/a2c9f105-b41a-41db-afd8-e70a54b3f21c | OpenAI | Full Stack Software Engineer, GTM Innovation 
+- [ ] https://jobs.ashbyhq.com/openai/23b158fe-709e-4bf5-856c-d10953d32f60 | OpenAI | Software Engineer - Privacy & Compliance
+- [ ] https://jobs.ashbyhq.com/openai/dd2025b9-4d18-4ad7-a78c-7a643419ecc5 | OpenAI | Backend Software Engineer, Growth
+- [ ] https://jobs.ashbyhq.com/openai/9b79406c-89a8-49bd-8a38-e72db80996e9 | OpenAI | Software Engineer, Inference – AMD GPU Enablement 
+- [ ] https://jobs.ashbyhq.com/openai/98ad9beb-4f91-496c-bd16-ac0b2a8d5bb2 | OpenAI | Software Engineer, Infrastructure Security
+- [ ] https://jobs.ashbyhq.com/openai/548fb239-b14d-4ab6-af38-05a84ac0914e | OpenAI | Full-Stack Software Engineer, Social Products
+- [ ] https://jobs.ashbyhq.com/openai/c02b35b2-af37-4740-a702-2ed3b5dc3cf1 | OpenAI | Software Engineer, Productivity
+- [ ] https://jobs.ashbyhq.com/openai/a97e89f0-67ad-41c9-a2d3-f64c4ab9a732 | OpenAI | Backend Software Engineer, Jobs Platform 
+- [ ] https://jobs.ashbyhq.com/openai/533c0fc9-b773-476d-9f96-a0528efbab0e | OpenAI | Forward Deployed Software Engineer - NYC
+- [ ] https://jobs.ashbyhq.com/openai/da07ba71-81fd-47c7-adb1-2b2d1eaed325 | OpenAI | Software Engineer, Distributed Data Systems (Sora)
+- [ ] https://jobs.ashbyhq.com/openai/8427b270-8440-400c-bc18-ff24c4f0f987 | OpenAI | Software Engineer, Full Stack, Revenue Platform
+- [ ] https://jobs.ashbyhq.com/openai/a4ea79c8-e79f-4126-8c1f-032289024961 | OpenAI | Software Engineer, Monetization Infrastructure
+- [ ] https://jobs.ashbyhq.com/openai/e6981259-c1d0-46de-8376-56bde28cfb10 | OpenAI | Software Engineer, ChatGPT Infrastructure 
+- [ ] https://jobs.ashbyhq.com/openai/73eb1b69-095d-4f27-84ba-54f5df9bc230 | OpenAI | Backend Software Engineer, B2B Applications
+- [ ] https://jobs.ashbyhq.com/openai/20f525b7-f958-4c95-a055-f914ab3adb95 | OpenAI | System Software Engineer, Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/22781653-051b-4c75-8725-b80233c67b1e | OpenAI | Backend Software Engineer, API Platform
+- [ ] https://jobs.ashbyhq.com/openai/2f4ded22-dcc4-4e2c-94be-ca824071a7b7 | OpenAI | Backend Software Engineer, Enterprise AI Platform
+- [ ] https://jobs.ashbyhq.com/openai/10c30695-c831-44e3-b6b9-cb31e2643791 | OpenAI | Camera ISP Software Engineer, Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/c51e48ce-31ad-4176-a6d5-4a785b44ab73 | OpenAI | Software Engineer, Monetization Product & Platform 
+- [ ] https://jobs.ashbyhq.com/openai/7613aca3-9dd8-41cd-b114-06ef4de967a9 | OpenAI | Software Engineer, Cooperative AI
+- [ ] https://jobs.ashbyhq.com/openai/89f58eb2-519f-4a36-8be0-2e594724e1bc | OpenAI | Software Engineer, Codex Ecosystem & Enterprise
+- [ ] https://jobs.ashbyhq.com/openai/130a5389-83e1-493f-9205-542d3ff53afb | OpenAI | Software Engineer, Codex Cloud
+- [ ] https://jobs.ashbyhq.com/openai/c2aeb70d-3eca-4c4f-a414-6394b30fea80 | OpenAI | Full Stack Engineer, Health AI
+- [ ] https://jobs.ashbyhq.com/openai/8e301350-62fb-4251-bc34-c7036498f08c | OpenAI | Backend Engineer, Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/5e4ed6d1-2417-4bf5-bae0-905931c488e3 | OpenAI | Software Engineer, Platform Systems
+- [ ] https://jobs.ashbyhq.com/openai/f6dfb6c0-44af-4512-af8c-967b8bb12867 | OpenAI | Software Engineer - Sensing, Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/1b7c5f3f-9fa6-4492-bc47-2cf5aeaade21 | OpenAI | Full Stack Software Engineer, ChatGPT Engineering
+- [ ] https://jobs.ashbyhq.com/openai/17e31e56-418a-43bb-a72a-1b935dc71e29 | OpenAI | Backend Software Engineer, ChatGPT Engineering
+- [ ] https://jobs.ashbyhq.com/openai/50626871-6bbf-4d8f-a534-176f929f1f37 | OpenAI | Full Stack Software Engineer, ChatGPT Partnerships
+- [ ] https://jobs.ashbyhq.com/openai/ef828b89-41ed-4cde-96a9-94ffe5770d4c | OpenAI | Full-Stack Engineer, ChatGPT Education  & Learning
+- [ ] https://jobs.ashbyhq.com/openai/4a13c764-18c3-4076-ac87-29e05491be07 | OpenAI | Machine Learning Engineer, Distributed Data Systems
+- [ ] https://jobs.ashbyhq.com/openai/059ac93e-3fc9-42e9-a4f4-367c0fd5de14 | OpenAI | Platform Engineer, Forward Deployed Engineering (FDE) -SF
+- [ ] https://jobs.ashbyhq.com/openai/46cd47bc-d4de-4826-aa2e-8b2e0da3c409 | OpenAI | Research Engineer / Machine Learning Engineer - Applied Voice
+- [ ] https://jobs.ashbyhq.com/openai/60e52bb7-3418-447c-8767-a6bb8e7dedd8 | OpenAI | Software Engineer, Codex App
+- [ ] https://jobs.ashbyhq.com/openai/5f6685ad-2fba-4e60-8982-fa142b33e194 | OpenAI | Frontend Software Engineer, Codex App
+- [ ] https://jobs.ashbyhq.com/openai/45ab8896-06bd-4c8e-bb76-914483d5d180 | OpenAI | Platform Engineer, Forward Deployed Engineering (FDE) - NYC
+- [ ] https://jobs.ashbyhq.com/openai/3ce0949d-b028-44f1-983c-446bb7bb1881 | OpenAI | Software Engineer, Ads Monetization, Revenue Platform
+- [ ] https://jobs.ashbyhq.com/openai/7b90b83c-ec28-4e65-a235-6675e37b91c3 | OpenAI | Forward Deployed Software Engineer - Seattle
+- [ ] https://jobs.ashbyhq.com/openai/e14fc37c-7ae5-4a6b-ba0d-a36860cf9bb2 | OpenAI | Software Engineer, Delivery / CD
+- [ ] https://jobs.ashbyhq.com/openai/deff9215-217d-4392-825e-7788cb8205f3 | OpenAI | Software Engineer, Localization
+- [ ] https://jobs.ashbyhq.com/openai/7ade7a12-845c-4e3a-af23-c028420bd181 | OpenAI | Software Engineer, Codex Core Agents
+- [ ] https://jobs.ashbyhq.com/openai/577e6673-0a4a-491b-9a0d-facbdd3bdf3c | OpenAI | Applied AI Engineer, Codex Core Agent
+- [ ] https://jobs.ashbyhq.com/openai/3544fb7b-669b-43e3-8828-94972620bac7 | OpenAI | Software Engineer, Infrastructure, Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/e44bfa94-0b82-4d0c-b224-02155b76eea9 | OpenAI | Software Engineer, Infrastructure - Analytics Platform
+- [ ] https://jobs.ashbyhq.com/openai/9efcef02-0515-4672-bace-81329944b38b | OpenAI | Software Engineer, Workload Enablement
+- [ ] https://jobs.ashbyhq.com/openai/e1321408-91da-4ef3-8ac6-2e1da1be796f | OpenAI | Software Engineer, System Enablement
+- [ ] https://jobs.ashbyhq.com/openai/69417f32-b564-471b-acdf-f0330bd7074e | OpenAI | Software Engineer, Scaled Abuse
+- [ ] https://jobs.ashbyhq.com/openai/bdd7d3ae-0921-45e5-8e8b-0846e9a402e1 | OpenAI | Full Stack Software Engineer, Jobs Platform
+- [ ] https://jobs.ashbyhq.com/openai/40ed6975-ef61-4807-b748-37c2fa2b76c7 | OpenAI | Software Engineer, Foundations Retrieval
+- [ ] https://jobs.ashbyhq.com/openai/aace9373-65bd-452b-91d8-1abfe8a7a11e | OpenAI | Full-Stack Engineer, ChatGPT Ecosystem (Apps Platform & SDK)
+- [ ] https://jobs.ashbyhq.com/openai/9b1b62f5-1400-4672-910a-fda6f975f642 | OpenAI | Full Stack Software Engineer, OpenAI Edu
+- [ ] https://jobs.ashbyhq.com/openai/c4f90594-d61b-4b78-997e-0b12ff998e50 | OpenAI | Software Engineer, Full Stack, Integrity Foundations
+- [ ] https://jobs.ashbyhq.com/openai/e9627fa6-ac76-4899-9a93-9251419e61a0 | OpenAI | Software Engineer, Kernel Performance & AI Tooling
+- [ ] https://jobs.ashbyhq.com/openai/9b2c68f2-5ce8-44f9-a30c-d8016ac66d86 | OpenAI | Connectivity Software Engineer, Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/ae3a32af-b862-45db-838c-7fb49d4bc27e | OpenAI | Software Engineer, Engineering Acceleration | Consumer Devices
+- [ ] https://jobs.ashbyhq.com/openai/5acf4854-1d42-40ca-bff8-4f6f04cdce68 | OpenAI | Machine Learning Engineer, API Multicloud
+- [ ] https://job-boards.greenhouse.io/axon/jobs/7640573003 | Axon | Software Engineer II
+- [ ] https://job-boards.greenhouse.io/axon/jobs/7577009003 | Axon | Software Engineer II, Cloud Engineering
+- [ ] https://aurora.tech/jobs/8391240002?gh_jid=8391240002 | Aurora Innovation | Behavior Planning Software Engineer
+- [ ] https://aurora.tech/jobs/8360046002?gh_jid=8360046002 | Aurora Innovation | Machine Learning Engineering TL, Behavior Planning
+- [ ] https://aurora.tech/jobs/8252330002?gh_jid=8252330002 | Aurora Innovation | Software Engineer, Autonomy Controls
+- [ ] https://aurora.tech/jobs/8309022002?gh_jid=8309022002 | Aurora Innovation | Software Engineer, Behavior Planning
+- [ ] https://aurora.tech/jobs/8159549002?gh_jid=8159549002 | Aurora Innovation | Software Engineer I
+- [ ] https://aurora.tech/jobs/8450213002?gh_jid=8450213002 | Aurora Innovation | Software Engineer I, FinOps
+- [ ] https://aurora.tech/jobs/8200724002?gh_jid=8200724002 | Aurora Innovation | Software Engineer II, Behavior Simulation
+- [ ] https://aurora.tech/jobs/8349377002?gh_jid=8349377002 | Aurora Innovation | Software Engineer II, Calibration
+- [ ] https://aurora.tech/jobs/8463953002?gh_jid=8463953002 | Aurora Innovation | Software Engineer II, Map Fusion
+- [ ] https://aurora.tech/jobs/8490724002?gh_jid=8490724002 | Aurora Innovation | Software Engineer II, Visualization
+- [ ] https://aurora.tech/jobs/8372578002?gh_jid=8372578002 | Aurora Innovation | Software Engineer I, Visualization 
+- [ ] https://aurora.tech/jobs/8204390002?gh_jid=8204390002 | Aurora Innovation | Software Engineer, Map Health and Validation
+- [ ] https://aurora.tech/jobs/8204392002?gh_jid=8204392002 | Aurora Innovation | Software Engineer, Mapping
+- [ ] https://aurora.tech/jobs/8445161002?gh_jid=8445161002 | Aurora Innovation | Software Engineer, MLDE Labels Platform
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7467839 | Waymo | Applied Research Scientist, 3D Object Detection  (PhD New Grad)
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7488508 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad)
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7539786 | Waymo | Machine Learning Engineer, 3D Object Detection  (PhD New Grad)
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7446301 | Waymo | Machine Learning Engineer, Data & Systems 
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7455853 | Waymo | Machine Learning Engineer, Driver Understanding and Evaluation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7819946 | Waymo | Machine Learning Engineer (Infra), Driver Understanding and Evaluation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7429791 | Waymo | Machine Learning Engineer - Mapping
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7426598 | Waymo | Machine Learning Engineer, ML Flywheel
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7446322 | Waymo | Machine Learning Engineer, Model Optimization
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7446279 | Waymo | Machine Learning Engineer, Perception Modeling
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=6506689 | Waymo | Machine Learning Engineer, Prediction & Planning
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=6506008 | Waymo | Machine Learning Engineer, Runtime & Optimization
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=6499165 | Waymo | Machine Learning Engineer, Simulation Realism
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=6688617 | Waymo | Machine Learning Engineer, Simulation Realism 
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7461052 | Waymo | Onboard Developer Platform Software Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7412386 | Waymo | Onboard Frameworks Software Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7461103 | Waymo | Onboard Infrastructure Software Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7307289 | Waymo | Software Engineer Backend - Simulation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7466529 | Waymo | Software Engineer, Bulk/Interactive Inference
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7554830 | Waymo | Software Engineer, GPU
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7416895 | Waymo | Software Engineer, Labeling Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7487849 | Waymo | Software Engineer, Large Model Evaluation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7426718 | Waymo | Software Engineer, ML Tools
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7609435 | Waymo | Software Engineer, Model Lifecycle
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7531397 | Waymo | Software Engineer, Multiverse
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7461072 | Waymo | Software Engineer, Onboard Reliability Infra
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7256244 | Waymo | Software Engineer, Perception Evaluation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7449712 | Waymo | Software Engineer, Perception Evaluation and Test Automation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7450565 | Waymo | Software Engineer, Perception Optimization
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7459622 | Waymo | Software Engineer, Planner
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7259110 | Waymo | Software Engineer, Planner Reasoning
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7141380 | Waymo | Software Engineer, Planner Vehicle Dynamics
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7547529 | Waymo | Software Engineer, Privacy
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7466534 | Waymo | Software Engineer, Quantitative Evaluations
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7587455 | Waymo | Software Engineer, Sensor/Imaging
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=6562547 | Waymo | Software Engineer, Simulator Evaluation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7543520 | Waymo | Software Engineer, Statistical Evaluation and Sampling
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7622998 | Waymo | Software Engineer, Strategic SWE Reserve
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7532414 | Waymo | Software Engineer, Test Automation Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7433503 | Waymo | Software Engineer, Trip Platform
+- [ ] https://jobs.lever.co/plaid/49139a62-a9bc-4400-ae89-789818b34cb8 | Plaid | Software Engineer
+- [ ] https://jobs.lever.co/plaid/2b9a141e-0669-4197-aa52-2b07d9fadc96 | Plaid | Software Engineer - Platform
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7644129 | Pure Storage | Applied AI Engineer
+- [ ] https://www.pathai.com/careers/8062963002?gh_jid=8062963002 | PathAI | Machine Learning Engineer II/III (Applied Research & Model Development)
+- [ ] https://www.pathai.com/careers/8466724002?gh_jid=8466724002 | PathAI | Software Engineer I, Fullstack
+- [ ] https://jobs.lever.co/palantir/ab7e3425-81d5-4705-a7b5-cd60c8a45cdb | Palantir | Backend Software Engineer - Application Development
+- [ ] https://jobs.lever.co/palantir/6fe5515f-f677-4d98-8ac2-1775a425f5e7 | Palantir | Backend Software Engineer - Infrastructure
+- [ ] https://jobs.lever.co/palantir/fb2d3222-dbd8-4e03-8d39-47b820e9509c | Palantir | Backend Software Engineer - Infrastructure, Foundations
+- [ ] https://jobs.lever.co/palantir/636fc05c-d348-4a06-be51-597cb9e07488 | Palantir | Forward Deployed AI Engineer
+- [ ] https://jobs.lever.co/palantir/74748e0e-a0bc-4c53-a636-ef14e36d9b5e | Palantir | Forward Deployed Infrastructure Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/98b81271-9e15-40b7-8dce-0c62f24702f9 | Palantir | Forward Deployed Software Engineer
+- [ ] https://jobs.lever.co/palantir/27bf5707-96fa-460e-8a5b-53bc192ca87b | Palantir | Forward Deployed Software Engineer  - Edge Autonomous Systems
+- [ ] https://jobs.lever.co/palantir/0edf7365-49f0-4263-818a-19409ec4f430 | Palantir | Forward Deployed Software Engineer - Autonomous Systems C2
+- [ ] https://jobs.lever.co/palantir/34b3a697-6e22-4751-befd-0b7921abbd5f | Palantir | Forward Deployed Software Engineer - Intel
+- [ ] https://jobs.lever.co/palantir/8aba5995-653d-4805-96e8-24488e6abf37 | Palantir | Forward Deployed Software Engineer - Japan Forward Deployed
+- [ ] https://jobs.lever.co/palantir/a39bf84c-6648-4871-bd07-9b882d401c4c | Palantir | Forward Deployed Software Engineer - Korea Forward Deployed
+- [ ] https://jobs.lever.co/palantir/3d0d9d92-0321-4459-a17d-fa1a76636a43 | Palantir | Forward Deployed Software Engineer - Tactical Edge
+- [ ] https://jobs.lever.co/palantir/289ad049-7b4e-41e3-8a39-146fbeb6fb64 | Palantir | Forward Deployed Software Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/13f99633-43b5-4459-8e84-25073f257c18 | Palantir | Forward Deployed Software Engineer - Warp Speed
+- [ ] https://jobs.lever.co/palantir/2da4be12-bc7a-4950-87db-e9d68d955ff7 | Palantir | Full Stack Software Engineer - Application Development
+- [ ] https://jobs.lever.co/palantir/25378ba0-db78-4c70-8174-a05ce514fc65 | Palantir | Product Designer, New Grad - US Government
+- [ ] https://jobs.lever.co/palantir/8f308f3e-43d2-49c9-accd-cc7af0f1565c | Palantir | Software Engineer - Apollo Platform
+- [ ] https://jobs.lever.co/palantir/832e4652-5088-4e5b-aeac-1e82ec3ebad4 | Palantir | Software Engineer - Apollo Systems
+- [ ] https://jobs.lever.co/palantir/cf76738e-3030-42fa-92ac-a9446df956fc | Palantir | Software Engineer - Core Interfaces
+- [ ] https://jobs.lever.co/palantir/3c84af24-b7aa-483e-b2c3-e1d83494fe15 | Palantir | Software Engineer - Developer Productivity
+- [ ] https://jobs.lever.co/palantir/397fb983-47b7-4a53-a7df-f080f43f7720 | Palantir | Software Engineer - Edge
+- [ ] https://jobs.lever.co/palantir/cd2423c6-da68-430c-8be5-0ae7eea36497 | Palantir | Software Engineer - Environment Platform
+- [ ] https://jobs.lever.co/palantir/71ed917e-850a-484b-9454-fa66bdf24540 | Palantir | Software Engineer - Frontend Developer Productivity
+- [ ] https://jobs.lever.co/palantir/94984771-0704-446c-88c6-91ce748f6d92 | Palantir | Software Engineer, New Grad
+- [ ] https://jobs.lever.co/palantir/4abf26b4-795c-420a-bf22-1ab98db268b4 | Palantir | Software Engineer, New Grad - Infrastructure
+- [ ] https://jobs.lever.co/palantir/4d5a144e-87ea-45e2-a68c-3fad590629af | Palantir | Software Engineer, New Grad - Production Infrastructure
+
+
+- [ ] https://job-boards.greenhouse.io/twilio/jobs/7647708 | Twilio | Software Engineer
+- [ ] https://www.asana.com/jobs/apply/7299272?gh_jid=7299272 | Asana | Software Engineer, CI/CD
+- [ ] https://stripe.com/jobs/search?gh_jid=6163230 | Stripe | Backend Engineer, Payments and Risk
+- [ ] https://stripe.com/jobs/search?gh_jid=7808471 | Stripe | Software Engineer
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8457711002 | Twitch | Software Engineer I, Commerce Engineering
+- [ ] https://job-boards.greenhouse.io/twitch/jobs/8417166002 | Twitch | Software Engineer I, Monetization ML
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792613101 | StubHub | Software Engineer II – Consumer Experience (Full-Stack)
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4787593101 | StubHub | Software Engineer II - Fulfillment
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4782722101 | StubHub | Software Engineer II - Web Foundations
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4825412101 | StubHub | Software Engineer I (New Grad) - Consumer Experience
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7340474?gh_jid=7340474 | Cloudflare | Distributed Systems Engineer - Data Platform - Analytics and Alerts
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7267602?gh_jid=7267602 | Cloudflare | Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7748727?gh_jid=7748727 | Cloudflare | Software Engineer- Resiliency
+- [ ] https://boards.greenhouse.io/cloudflare/jobs/7477711?gh_jid=7477711 | Cloudflare | Software Engineer - Traffic Management 
+- [ ] https://jobs.ashbyhq.com/openai/e45e0ff2-12f1-4c12-a4a3-c93406dad33f | OpenAI | Client Platform Engineer
+- [ ] https://jobs.ashbyhq.com/openai/779b340d-e645-4da1-a923-b3070a26d936 | OpenAI | Software Engineer, Infrastructure Reliability
+- [ ] https://jobs.lever.co/plaid/f455a60a-6ea0-4d1b-890b-5f7869192c5f | Plaid | Software Engineer
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002 | Databricks | Systems PhD - Software Engineer 
+- [ ] https://job-boards.greenhouse.io/axon/jobs/7576989003 | Axon | Software Engineer II
+- [ ] https://aurora.tech/jobs/8291042002?gh_jid=8291042002 | Aurora Innovation | Software Engineer, Mapping
+- [ ] https://jobs.lever.co/palantir/8fcae765-de9a-4990-ba84-e65b524d683b | Palantir | Forward Deployed Infrastructure Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0 | Palantir | Forward Deployed Software Engineer
+- [ ] https://jobs.lever.co/palantir/c62264f5-5da8-40fe-9b44-f7f0f0012e11 | Palantir | Forward Deployed Software Engineer - Autonomous Systems C2
+- [ ] https://jobs.lever.co/palantir/84131e3f-455e-47fc-9c11-898d95f09048 | Palantir | Forward Deployed Software Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/5f7a90e7-f927-47bf-90ed-52d17c58ae02 | Palantir | Product Designer, New Grad - US Government
+- [ ] https://jobs.lever.co/palantir/afea07a8-2721-45e6-a9ca-6580f3f9783c | Palantir | Software Engineer - Apollo Platform
+- [ ] https://jobs.lever.co/palantir/e47d4410-2542-47d8-b558-b5295fc28821 | Palantir | Software Engineer - Apollo Systems
+- [ ] https://jobs.lever.co/palantir/d5d83a8f-cb96-41cc-9612-c7224fbb2fbc | Palantir | Software Engineer - Environment Platform
+- [ ] https://jobs.lever.co/palantir/dea9d3d5-75b2-4588-b7bd-585a47b79c8c | Palantir | Software Engineer, New Grad
+- [ ] https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d | Palantir | Software Engineer, New Grad - Infrastructure
+- [ ] https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a | Palantir | Software Engineer, New Grad - Production Infrastructure
+- [ ] https://salesforce.wd12.myworkdayjobs.com/en-US/Futureforce_NewGradRoles/job/Illinois---Chicago/Sales-Development-Representative-Apprentice_JR332276 | Salesforce | Sales Development Representative Apprentice (Early Career)
+- [ ] https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/Software-Development-Engineer_R167606 | Adobe | Software Development Engineer
+- [ ] https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/Software-Development-Engineer-3_R165937 | Adobe | Full Stack Software Engineer
+- [ ] https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/Full-Stack-Engineer--Enterprise-GenAI_R165370 | Adobe | Full-Stack Engineer, Enterprise GenAI
+- [ ] https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/Production-Service-Engineer-3_R163693 | Adobe | Cloud Platform Engineer
+- [ ] https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/XMLNAME-2026-University-Graduate---Software-Development-Engineer_R161172 | Adobe | 2026 University Graduate - Software Development Engineer
+- [ ] https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/Machine-Learning-Engineer_R167868 | Adobe | Machine Learning Engineer
+- [ ] https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Deep-Learning-Software-Engineer--FlashInfer---New-College-Grad-2025_JR2002086 | Nvidia | Deep Learning Software Engineer, FlashInfer - New College Grad 2025
+- [ ] https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Engineer--Simulation---Robotics_JR2015217 | Nvidia | Software Engineer, Simulation - Robotics
+- [ ] https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/GPU-Development-Tools-System-Software-Engineer_JR2015871-1 | Nvidia | GPU Development Tools System Software Engineer
+- [ ] https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/System-Software-Engineer---CUDA-Chips_JR2016365 | Nvidia | System Software Engineer - CUDA Chips
+- [ ] https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-MA-Westford/Software-Engineer---DPU-Platform_JR2015949-1 | Nvidia | Software Engineer - DPU Platform
+
+- [ ] https://jobs.intuit.com/job/new-york/software-engineer-1-fullstack/27595/94027937200?kt=1&k=software%2520engineer%25201 | Intuit | Software Engineer 1 - Fullstack New York, New York
+- [ ] https://jobs.intuit.com/job/mountain-view/software-engineer-1/27595/87369448720?kt=1&k=software%2520engineer%25201 | Intuit | Software Engineer 1 Multiple Locations
+- [ ] https://job-boards.greenhouse.io/fireworksai/jobs/4001304009 | Fireworks AI | Applied Machine Learning Engineer New York, NY; San Mateo, CA
+- [ ] https://job-boards.greenhouse.io/fireworksai/jobs/4013136009 | Fireworks AI | GenAI GTM Representative – GenAI Startups New York, NY; San Mateo, CA
+- [ ] https://job-boards.greenhouse.io/fireworksai/jobs/4056271009 | Fireworks AI | Software Engineer, AI Infrastructure New York, NY; San Mateo, CA
+
+- [ ] https://job-boards.greenhouse.io/twilio/jobs/7699251 | Twilio | Software Engineer
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4792614101 | StubHub | Software Engineer II – Consumer Experience (Full-Stack)
+- [ ] https://job-boards.eu.greenhouse.io/stubhubinc/jobs/4794786101 | StubHub | Software Engineer I (New Grad) - Consumer Experience
+- [ ] https://jobs.ashbyhq.com/openai/720bd7ae-2d65-4f1c-b01a-86278dedabde | OpenAI | Client Platform Engineer
+- [ ] https://jobs.lever.co/plaid/f456f4fa-a9f7-4673-892a-8943e3cfa3fe | Plaid | Software Engineer
+- [ ] https://jobs.lever.co/palantir/b57f08e9-546c-4b9b-8d21-db0ebbc11363 | Palantir | Forward Deployed Infrastructure Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/e82b696e-a085-4bbf-8bcb-6d2c4f8cf2f7 | Palantir | Forward Deployed Software Engineer - US Government
+- [ ] https://www.amazon.jobs/en/jobs/10398722/software-engineer | Amazon | Software Engineer
+- [ ] https://www.amazon.jobs/en/jobs/10398926/software-development-engineer-iii-aws-transactional-services-database-distributed-systems | Amazon | Software Development Engineer III, AWS Transactional Services (Database & Distributed Systems) 
+- [ ] https://www.amazon.jobs/en/jobs/10396509/software-development-engineer-aws-central-sde-team | Amazon | Software Development Engineer, AWS Central SDE Team
+- [ ] https://www.amazon.jobs/en/jobs/10399017/software-development-engineer-cloudfront | Amazon | Software Development Engineer, CloudFront
+- [ ] https://www.amazon.jobs/en/jobs/10395119/software-development-engineer-kuiper-data-platform | Amazon | Software Development Engineer, Kuiper Data Platform
+- [ ] https://www.amazon.jobs/en/jobs/10398886/software-development-engineer-integrated-vehicle-testing | Amazon | Software Development Engineer, Integrated Vehicle Testing
+- [ ] https://www.amazon.jobs/en/jobs/10394985/software-development-engineer-ads-payments | Amazon | Software Development Engineer, Ads Payments
+- [ ] https://www.amazon.jobs/en/jobs/10398460/software-development-engineer-ii | Amazon | Software Development Engineer II
+- [ ] https://www.amazon.jobs/en/jobs/10395029/aws-s3-software-development-engineer-s3-storage-volume-cells | Amazon | AWS S3 Software Development Engineer, S3 Storage Volume Cells
+- [ ] https://www.amazon.jobs/en/jobs/10395030/software-development-engineer-amazon-s3-amazon-s3 | Amazon | Software Development Engineer, Amazon S3, Amazon S3
+- [ ] https://www.amazon.jobs/en/jobs/10398684/software-development-engineer-creativex | Amazon | Software Development Engineer, CreativeX
+- [ ] https://www.amazon.jobs/en/jobs/10392904/software-development-engineer-aurora-storage | Amazon | Software Development Engineer, Aurora Storage
+- [ ] https://www.amazon.jobs/en/jobs/10392164/software-development-engineer-aws-marketplace | Amazon | Software Development Engineer, AWS Marketplace
+- [ ] https://www.amazon.jobs/en/jobs/10398591/software-development-engineer-ii-aws-network-services-client | Amazon | Software Development Engineer II, AWS Network Services Client
+- [ ] https://www.amazon.jobs/en/jobs/10396342/software-development-engineer-applied-ai-solutions | Amazon | Software Development Engineer, Applied AI Solutions
+- [ ] https://www.amazon.jobs/en/jobs/10394890/software-development-engineer | Amazon | Software Development Engineer
+- [ ] https://www.amazon.jobs/en/jobs/10390634/software-development-engineer-distributed-systems-annapurna-labs | Amazon | Software Development Engineer, Distributed Systems, Annapurna Labs
+- [ ] https://www.amazon.jobs/en/jobs/10390718/software-development-engineer-ii-aws-core-networking-network-fabric-engineering-core-networking-edge-capacity | Amazon | Software Development Engineer II, AWS Core Networking – Network Fabric Engineering, Core Networking - Edge Capacity
+- [ ] https://www.amazon.jobs/en/jobs/10391995/software-development-engineer-aurora-dsql | Amazon | Software Development Engineer, Aurora DSQL
+- [ ] https://www.amazon.jobs/en/jobs/10395039/software-development-engineer-iam-console-team | Amazon | Software Development Engineer, IAM Console Team
+- [ ] https://www.amazon.jobs/en/jobs/10390629/software-engineer-safety | Amazon | Software Engineer, Safety
+- [ ] https://www.amazon.jobs/en/jobs/10394864/software-development-engineer-traffic-engineering | Amazon | Software Development Engineer, Traffic Engineering
+- [ ] https://www.amazon.jobs/en/jobs/10392430/software-development-engineer-ii-efa-network-annapurna-labs | Amazon | Software Development Engineer II, EFA Network - Annapurna Labs
+- [ ] https://www.amazon.jobs/en/jobs/10391977/software-development-engineer-network-observability-leo-autopilot | Amazon | Software Development Engineer - Network Observability, Leo Autopilot
+- [ ] https://www.amazon.jobs/en/jobs/10396126/software-development-engineer-ii-afss-identity | Amazon | Software Development Engineer II, AFSS Identity
+- [ ] https://www.amazon.jobs/en/jobs/10392175/software-development-engineer-amazon-ads-dsp | Amazon | Software Development Engineer, Amazon Ads DSP
+- [ ] https://www.amazon.jobs/en/jobs/10391163/machine-learning-engineer-sponsored-products-off-search-sourcing-and-relevance | Amazon | Machine Learning Engineer, Sponsored Products Off-Search Sourcing and Relevance
+- [ ] https://www.amazon.jobs/en/jobs/10389962/software-engineer-database-migration-service | Amazon | Software Engineer, Database Migration Service
+- [ ] https://www.amazon.jobs/en/jobs/10391766/software-development-engineer-ii-aws-ebs-backup-snapshot-edge | Amazon | Software Development Engineer II, AWS EBS Backup Snapshot & Edge 
+- [ ] https://www.amazon.jobs/en/jobs/10391644/software-development-engineer-ii-enterprise-engineering-productivity-applications | Amazon | Software Development Engineer II, Enterprise Engineering Productivity Applications 
+- [ ] https://www.amazon.jobs/en/jobs/10389597/software-development-engineer-conversational-ads-experience | Amazon | Software Development Engineer, Conversational Ads Experience
+- [ ] https://www.amazon.jobs/en/jobs/10389123/software-development-engineer-elasticache | Amazon | Software Development Engineer, ElastiCache
+- [ ] https://www.amazon.jobs/en/jobs/10390562/software-development-engineer-finance-ai-transformation-corp-fp-a-technology | Amazon | Software Development Engineer- Finance AI/Transformation, Corp FP&A Technology
+- [ ] https://www.amazon.jobs/en/jobs/10388667/software-development-engineer-aws-nat-gateway | Amazon | Software Development Engineer, AWS NAT Gateway
+- [ ] https://www.amazon.jobs/en/jobs/10393348/software-development-engineer-iii-developer-experience | Amazon | Software Development Engineer III, Developer Experience
+- [ ] https://www.amazon.jobs/en/jobs/10387516/software-engineer-ml-acceleration-annapurna-labs-ml-acceleration-system-software | Amazon | Software Engineer ML Acceleration, Annapurna Labs ML Acceleration System Software
+- [ ] https://www.amazon.jobs/en/jobs/10394378/software-development-engineer-route-53 | Amazon | Software Development Engineer, Route 53
+- [ ] https://www.amazon.jobs/en/jobs/10387280/software-engineer-ii-safety | Amazon | Software Engineer II, Safety
+- [ ] https://www.amazon.jobs/en/jobs/10396548/software-development-engineer-weblab-analysis-weblab-analysis | Amazon | Software Development Engineer, Weblab Analysis, Weblab Analysis
+- [ ] https://www.amazon.jobs/en/jobs/10390224/software-development-engineer-ii-data-center-design-engineering-bim-ai-technologies | Amazon | Software Development Engineer II, Data Center Design Engineering - BIM & AI Technologies
+- [ ] https://www.amazon.jobs/en/jobs/10390139/ai-engineer-genai-creative-x | Amazon | AI Engineer - GenAI, Creative-X
+- [ ] https://www.amazon.jobs/en/jobs/10392941/software-development-engineer-ii-aws-dynamodb | Amazon | Software Development Engineer II, AWS DynamoDB
+- [ ] https://www.amazon.jobs/en/jobs/10386482/software-development-engineer-amazon-msk | Amazon | Software Development Engineer, Amazon MSK
+- [ ] https://www.amazon.jobs/en/jobs/10397120/software-development-engineer-satellite-telemetry-and-command-systems | Amazon | Software Development Engineer, Satellite Telemetry and Command Systems
+- [ ] https://www.amazon.jobs/en/jobs/10393227/software-development-engineer-amazon-redshift-query-optimizer | Amazon | Software Development Engineer, Amazon Redshift Query Optimizer
+- [ ] https://www.amazon.jobs/en/jobs/10386468/software-development-engineer-aws-elasticache-aws-in-memory-databases | Amazon | Software Development Engineer, AWS ElastiCache, AWS In memory databases
+- [ ] https://www.amazon.jobs/en/jobs/10387286/software-development-engineer-aws-distributed-sql | Amazon | Software Development Engineer, AWS Distributed SQL
+- [ ] https://www.amazon.jobs/en/jobs/10385689/sde-ii-query-processing-aurora-dsql | Amazon | SDE-II, Query Processing, Aurora DSQL
+- [ ] https://www.amazon.jobs/en/jobs/10387999/software-development-engineer-leo-payload-radio | Amazon | Software Development Engineer, Leo Payload Radio
+- [ ] https://www.amazon.jobs/en/jobs/10398748/software-development-engineer-ii-security-response-and-engineering | Amazon | Software Development Engineer II, Security Response and Engineering
+- [ ] https://www.amazon.jobs/en/jobs/10391926/software-development-engineer-amazon-private-brands | Amazon | Software Development Engineer, Amazon Private Brands
+- [ ] https://www.amazon.jobs/en/jobs/10394838/sde-ii-rufus-amazon-rufus | Amazon | SDE II - Rufus, Amazon Rufus
+- [ ] https://www.amazon.jobs/en/jobs/10389211/software-development-engineer-sponsored-products | Amazon | Software Development Engineer, Sponsored Products
+- [ ] https://www.amazon.jobs/en/jobs/10392768/software-development-engineer-strada | Amazon | Software Development Engineer, STRADA
+- [ ] https://www.amazon.jobs/en/jobs/10394066/software-development-engineer-ads-core-services-acs | Amazon | Software Development Engineer, Ads Core Services (ACS)
+- [ ] https://www.amazon.jobs/en/jobs/10391254/software-development-engineer-ring-agent-platforms | Amazon | Software Development Engineer, Ring Agent Platforms
+- [ ] https://www.amazon.jobs/en/jobs/10384607/software-development-engineer-media-planning-and-measurement | Amazon | Software Development Engineer, Media Planning and Measurement
+- [ ] https://www.amazon.jobs/en/jobs/10383376/software-development-engineer-advertiser-1p-data | Amazon | Software Development Engineer, Advertiser 1P Data
+- [ ] https://www.amazon.jobs/en/jobs/10384198/software-development-engineer-zerotouch-gsg-at-amazon-leo | Amazon | Software Development Engineer, ZeroTouch GSG at Amazon Leo
+- [ ] https://www.amazon.jobs/en/jobs/10385633/software-development-engineer-ii-fleet-automation-and-release-orchestration-faros | Amazon | Software Development Engineer II, Fleet Automation and Release Orchestration (FAROS)
+- [ ] https://www.amazon.jobs/en/jobs/10397927/software-development-engineer-project-accounting-subledger-psl | Amazon | Software Development Engineer, Project Accounting Subledger (PSL)
+- [ ] https://www.amazon.jobs/en/jobs/10387370/software-development-engineer-ii-aws-networking-application-sidr | Amazon | Software Development Engineer II - AWS Networking Application, SIDR
+- [ ] https://www.amazon.jobs/en/jobs/10383923/software-development-engineer-onemhs | Amazon | Software Development Engineer, OneMHS
+- [ ] https://www.amazon.jobs/en/jobs/10382496/software-development-engineer-aws-sde-centralized-team | Amazon | Software Development Engineer, AWS SDE Centralized Team
+- [ ] https://www.amazon.jobs/en/jobs/10383254/robotics-software-development-engineer | Amazon | Robotics - Software Development Engineer 
+- [ ] https://www.amazon.jobs/en/jobs/10394276/software-development-engineer-selling-partner-promotions | Amazon | Software Development Engineer, Selling Partner Promotions
+- [ ] https://www.amazon.jobs/en/jobs/10385444/software-development-engineer-devices-software-services | Amazon | Software Development Engineer, Devices Software & Services
+- [ ] https://www.amazon.jobs/en/jobs/10388836/software-development-engineer-aws-opensearch | Amazon |  Software Development Engineer, AWS OpenSearch
+- [ ] https://www.amazon.jobs/en/jobs/10387823/software-development-engineer-software-defined-network-control-plane-amazon-leo | Amazon | Software Development Engineer , Software Defined Network Control Plane, Amazon LEO
+- [ ] https://www.amazon.jobs/en/jobs/10386812/software-development-engineer-ii-dynamodb | Amazon | Software Development Engineer II, DynamoDB
+- [ ] https://www.amazon.jobs/en/jobs/10393905/software-development-engineer-amazon-s3-index | Amazon | Software Development Engineer, Amazon S3 Index
+- [ ] https://www.amazon.jobs/en/jobs/10387371/software-development-engineer-ii-aws-networking-applications-sidr | Amazon | Software Development Engineer II - AWS Networking Applications, SIDR
+- [ ] https://www.amazon.jobs/en/jobs/10390163/software-development-engineer-amazon-security-platform-engineering | Amazon | Software Development Engineer, Amazon Security Platform Engineering
+- [ ] https://www.amazon.jobs/en/jobs/10388015/neuron-runtime-software-development-engineer-neuron-runtime | Amazon | Neuron Runtime Software Development Engineer , Neuron Runtime
+- [ ] https://www.amazon.jobs/en/jobs/10383638/software-development-engineer-iii-special-projects | Amazon | Software Development Engineer III, Special Projects
+- [ ] https://www.amazon.jobs/en/jobs/10381944/software-development-engineer-advanced-analytics-lld | Amazon | Software Development Engineer, Advanced Analytics - LLD
+- [ ] https://www.amazon.jobs/en/jobs/10393749/software-development-engineer-amazon-transportation | Amazon | Software Development Engineer – Amazon Transportation
+- [ ] https://www.amazon.jobs/en/jobs/10383401/software-development-engineer-amazon-leo-network-services | Amazon | Software Development Engineer, Amazon Leo Network Services
+- [ ] https://www.amazon.jobs/en/jobs/10395102/software-development-engineer-aws-glue | Amazon | Software Development Engineer, AWS Glue
+- [ ] https://www.amazon.jobs/en/jobs/10382720/software-development-engineer-amazon-robotics-ar-sortation-planning-planners-trackers | Amazon | Software Development Engineer , Amazon Robotics (AR) Sortation Planning - Planners & Trackers
+- [ ] https://www.amazon.jobs/en/jobs/10392834/software-development-engineer-ii-robotics-simulation | Amazon | Software Development Engineer II, Robotics Simulation
+- [ ] https://www.amazon.jobs/en/jobs/10383163/software-development-engineer-ring-gateways-and-permissions-team | Amazon | Software Development Engineer, Ring Gateways and Permissions Team
+- [ ] https://www.amazon.jobs/en/jobs/10384306/software-development-engineer-ii-aws-security | Amazon | Software Development Engineer II, AWS Security
+- [ ] https://www.amazon.jobs/en/jobs/10385708/software-development-engineer-aws-training-and-certification | Amazon | Software Development Engineer, AWS Training and Certification
+- [ ] https://www.amazon.jobs/en/jobs/10385710/software-development-engineer-training-certifications | Amazon | Software Development Engineer, Training & Certifications
+- [ ] https://www.amazon.jobs/en/jobs/10387292/software-engineer-graviton-software-annapurna-labs | Amazon | Software Engineer, Graviton Software, Annapurna Labs
+- [ ] https://www.amazon.jobs/en/jobs/10378484/software-development-engineer-ii-ring-smb | Amazon | Software Development Engineer II, Ring SMB
+- [ ] https://www.amazon.jobs/en/jobs/10384199/software-development-engineer-amazon-robotics-ar-sortation-planning | Amazon | Software Development Engineer , Amazon Robotics (AR) Sortation Planning 
+- [ ] https://www.amazon.jobs/en/jobs/10382364/software-development-engineer-aws-proactive-security | Amazon | Software Development Engineer, AWS Proactive Security
+- [ ] https://www.amazon.jobs/en/jobs/10385501/software-development-engineer-software-defined-network-controller-amazon-leo | Amazon | Software Development Engineer , Software Defined Network Controller, Amazon LEO 
+- [ ] https://www.amazon.jobs/en/jobs/10379717/software-development-engineer-ii-aws-catalog | Amazon | Software Development Engineer II, AWS Catalog
+- [ ] https://www.amazon.jobs/en/jobs/10377513/software-development-engineer-query-processing-aws-analytics | Amazon | Software Development Engineer, Query Processing AWS Analytics
+- [ ] https://www.amazon.jobs/en/jobs/10377512/software-development-engineer-open-data-analytics-engines | Amazon | Software Development Engineer, Open Data Analytics - Engines
+- [ ] https://www.amazon.jobs/en/jobs/10387837/software-development-engineer-workforce-solutions-employee-onboarding-experience | Amazon | Software Development Engineer, Workforce Solutions - Employee Onboarding Experience
+- [ ] https://www.amazon.jobs/en/jobs/10383244/software-development-engineer-management-plane | Amazon | Software Development Engineer, Management Plane
+- [ ] https://www.amazon.jobs/en/jobs/10378122/soc-systems-software-engineer-annapurna-labs-machine-learning-accelerators-aws | Amazon | SoC Systems Software Engineer, Annapurna Labs Machine Learning Accelerators, AWS
+- [ ] https://www.amazon.jobs/en/jobs/10378117/virtual-platform-software-engineer-annapurna-labs-machine-learning-accelerators-aws | Amazon | Virtual Platform Software Engineer, Annapurna Labs Machine Learning Accelerators, AWS
+- [ ] https://www.amazon.jobs/en/jobs/10378294/software-development-engineer-agi-data-services | Amazon | Software Development Engineer, AGI Data Services
+- [ ] https://www.amazon.jobs/en/jobs/10380507/software-development-engineer-data-plane-network-product-development | Amazon | Software Development Engineer, Data Plane, Network Product Development
+- [ ] https://www.amazon.jobs/en/jobs/10377977/software-development-engineer-prime-video-optic-team | Amazon | Software Development Engineer, Prime Video Optic Team
+- [ ] https://www.amazon.jobs/en/jobs/10394788/software-development-engineer-ec2-gateway-networking | Amazon | Software Development Engineer, EC2 Gateway Networking
+- [ ] https://www.amazon.jobs/en/jobs/10379249/machine-learning-engineer-ad-response-prediction | Amazon | Machine Learning Engineer, Ad Response Prediction
+- [ ] https://www.amazon.jobs/en/jobs/10379310/software-development-engineer-ads-experience-framework | Amazon | Software Development Engineer, Ads Experience Framework
+- [ ] https://www.amazon.jobs/en/jobs/10376347/software-development-engineer-item-identity-services-iis | Amazon | Software Development Engineer, Item Identity Services (IIS)
+- [ ] https://www.amazon.jobs/en/jobs/10378716/software-development-engineer-data-center-builder-tools | Amazon | Software Development Engineer, Data Center Builder Tools
+- [ ] https://www.amazon.jobs/en/jobs/10375477/software-development-engineer-iii-neuron-containers-neuron-containers-annapurna-labs | Amazon | Software Development Engineer III — Neuron Containers, Neuron Containers, Annapurna Labs
+- [ ] https://www.amazon.jobs/en/jobs/10376310/software-development-engineer-prime-video-ad-measurement | Amazon | Software Development Engineer, Prime Video Ad Measurement
+- [ ] https://www.amazon.jobs/en/jobs/10376198/software-development-engineer-amazon-key-for-business | Amazon | Software Development Engineer, Amazon Key For Business
+- [ ] https://www.amazon.jobs/en/jobs/10376381/software-development-engineer-aws-athena | Amazon | Software Development Engineer, AWS Athena
+- [ ] https://www.amazon.jobs/en/jobs/10378377/software-development-engineer-amazon-key | Amazon | Software Development Engineer, Amazon Key
+- [ ] https://www.amazon.jobs/en/jobs/10375046/software-engineer-ii-ai-ml-aws-neuron | Amazon | Software Engineer II- AI/ML, AWS Neuron 
+- [ ] https://www.amazon.jobs/en/jobs/10388661/software-development-engineer-ii-network-device-lifecycle-management | Amazon | Software Development Engineer II, Network Device Lifecycle Management
+- [ ] https://www.amazon.jobs/en/jobs/10372503/software-engineer-i-streamer-monetization-experience | Amazon | Software Engineer I, Streamer Monetization Experience 
+- [ ] https://www.amazon.jobs/en/jobs/10374217/software-development-engineer-sponsored-products-and-brands | Amazon | Software Development Engineer, Sponsored Products and Brands
+- [ ] https://www.amazon.jobs/en/jobs/10372614/software-development-engineer-ii-items-and-relationships-platform | Amazon | Software Development Engineer II, Items and Relationships Platform
+- [ ] https://www.amazon.jobs/en/jobs/10383449/software-development-engineer-ii-amazon-leo | Amazon | Software Development Engineer II, Amazon Leo 
+- [ ] https://www.amazon.jobs/en/jobs/10371632/software-development-engineer-data-center-controls-automation-software-engineering | Amazon | Software Development Engineer, Data Center Controls Automation Software Engineering
+- [ ] https://www.amazon.jobs/en/jobs/3208334/software-engineer-i-community-growth | Amazon | Software Engineer I,  Community Growth
+- [ ] https://www.amazon.jobs/en/jobs/10372701/software-development-engineer-account-management-ads-ai-core-infrastructure-aci | Amazon | Software Development Engineer, Account Management, Ads AI Core Infrastructure (ACI)
+- [ ] https://www.amazon.jobs/en/jobs/10385700/software-development-engineer-ii-afss | Amazon | Software Development Engineer II, AFSS
+- [ ] https://www.amazon.jobs/en/jobs/10383566/software-development-engineer-ec2-ultraserver-availability | Amazon | Software Development Engineer, EC2 UltraServer Availability
+- [ ] https://www.amazon.jobs/en/jobs/10374030/sde-ii-aws-investments | Amazon | SDE II, AWS Investments
+- [ ] https://www.amazon.jobs/en/jobs/10371401/software-development-engineer-big-data-aws-elastic-mapreduce-emr | Amazon | Software Development Engineer – Big Data, AWS Elastic MapReduce (EMR)
+- [ ] https://www.amazon.jobs/en/jobs/10371336/software-development-engineer-fire-tv | Amazon | Software Development Engineer, Fire TV
+- [ ] https://www.amazon.jobs/en/jobs/3207203/software-development-engineer-ii-ec2-networking | Amazon | Software Development Engineer II, EC2 Networking 
+- [ ] https://www.amazon.jobs/en/jobs/10390314/software-development-engineer-aws-usage-forecast-planning | Amazon | Software Development Engineer, AWS Usage Forecast Planning
+- [ ] https://www.amazon.jobs/en/jobs/10377139/software-development-engineer-chronicle-analytics | Amazon | Software Development Engineer, Chronicle Analytics
+- [ ] https://www.amazon.jobs/en/jobs/10372529/software-development-engineer-ring | Amazon | Software Development Engineer, Ring
+- [ ] https://www.amazon.jobs/en/jobs/10376451/software-development-engineer-ai-core-infra-ai-analytics-and-insights | Amazon | Software Development Engineer, AI Core Infra - AI Analytics and Insights
+- [ ] https://www.amazon.jobs/en/jobs/10376067/machine-learning-engineer-ii-amazon-music-ai-and-personalization | Amazon | Machine Learning Engineer II, Amazon Music - AI and Personalization
+- [ ] https://www.amazon.jobs/en/jobs/3206623/software-development-engineer-dca-video-ads | Amazon | Software Development Engineer, DCA Video Ads 
+- [ ] https://www.amazon.jobs/en/jobs/10371512/sde-ii-leo-autopilot | Amazon | SDE II, Leo Autopilot
+- [ ] https://www.amazon.jobs/en/jobs/10372794/software-development-engineer-measurement-ad-tech-and-data-science | Amazon | Software Development Engineer, Measurement, Ad Tech, and Data Science
+- [ ] https://www.amazon.jobs/en/jobs/10378746/software-development-engineer-amazon-redshift-redshift | Amazon | Software Development Engineer - Amazon Redshift, Redshift
+- [ ] https://www.amazon.jobs/en/jobs/10390300/software-development-engineer-ec2-pricing-engineering-ec2-pricing-commitment-visibility-products | Amazon | Software Development Engineer, EC2 Pricing Engineering, EC2 Pricing - Commitment Visibility Products
+- [ ] https://www.amazon.jobs/en/jobs/10396842/software-development-engineer-nitro-ssd | Amazon | Software Development Engineer, Nitro SSD
+- [ ] https://www.amazon.jobs/en/jobs/3206211/software-development-engineer-iii-aws-sagemaker-lakehouse-catalog | Amazon | Software Development Engineer III, AWS Sagemaker Lakehouse Catalog
+- [ ] https://www.amazon.jobs/en/jobs/10372417/software-development-engineer-items-and-offers-platform-catalog-diagnostics-analytics | Amazon | Software Development Engineer, Items and Offers Platform, Catalog Diagnostics & Analytics
+- [ ] https://www.amazon.jobs/en/jobs/10394286/software-development-engineer-ftv-search | Amazon | Software Development Engineer, FTV Search
+- [ ] https://www.amazon.jobs/en/jobs/3208417/software-development-engineer-big-data-aws-elastic-mapreduce-emr-emr-eks | Amazon | Software Development Engineer – Big Data, AWS Elastic MapReduce (EMR), EMR EKS
+- [ ] https://www.amazon.jobs/en/jobs/10396444/software-development-engineer-ec2-instance-networking | Amazon | Software Development Engineer, EC2 Instance Networking
+- [ ] https://www.amazon.jobs/en/jobs/3201597/software-development-engineer-lep-telemetry-and-command | Amazon | Software Development Engineer, Lep Telemetry and Command
+- [ ] https://www.amazon.jobs/en/jobs/3208045/software-development-engineer-data-integration-ai-and-platform-excellence-apex | Amazon | Software Development Engineer, Data Integration AI and Platform Excellence (APEX)
+- [ ] https://www.amazon.jobs/en/jobs/10394140/software-development-engineer-s3 | Amazon | Software Development Engineer, S3
+- [ ] https://www.amazon.jobs/en/jobs/3200027/software-development-engineer-playback-team | Amazon | Software Development Engineer, Playback Team 
+- [ ] https://www.amazon.jobs/en/jobs/10382910/software-development-engineer-ii-specialized-selection | Amazon | Software Development Engineer II, Specialized Selection
+- [ ] https://www.amazon.jobs/en/jobs/10393376/software-development-engineer-woot | Amazon | Software Development Engineer, Woot!
+- [ ] https://www.amazon.jobs/en/jobs/10381148/software-development-engineer-aws-ground-station-service | Amazon | Software Development Engineer, AWS Ground Station Service
+- [ ] https://www.amazon.jobs/en/jobs/3202831/software-development-engineer-alexa-device-platform-team | Amazon | Software Development Engineer , Alexa Device Platform Team
+- [ ] https://www.amazon.jobs/en/jobs/10381248/software-engineer-ml-and-distributed-systems-amazon-personalize | Amazon | Software Engineer - ML and Distributed Systems, Amazon Personalize
+- [ ] https://www.amazon.jobs/en/jobs/3200917/software-development-engineer-prime-air | Amazon | Software Development Engineer, Prime Air
+- [ ] https://www.amazon.jobs/en/jobs/10381642/machine-learning-engineer-alexa-ai | Amazon | Machine Learning Engineer, Alexa AI
+- [ ] https://www.amazon.jobs/en/jobs/3206931/machine-learning-engineer-ois-core-engine | Amazon | Machine Learning Engineer, OIS-Core Engine
+- [ ] https://www.amazon.jobs/en/jobs/3197843/machine-learning-engineer-aws-applied-ai-solution | Amazon | Machine Learning Engineer, AWS Applied AI Solution  
+- [ ] https://www.amazon.jobs/en/jobs/10396449/software-engineer-ec2-nitro | Amazon | Software Engineer, EC2 Nitro
+- [ ] https://www.amazon.jobs/en/jobs/3202423/software-development-engineer-neuron-foundation-tools | Amazon | Software Development Engineer, Neuron Foundation Tools
+- [ ] https://www.amazon.jobs/en/jobs/3198635/software-development-engineer-sponsored-brands-advertising | Amazon | Software Development Engineer, Sponsored Brands Advertising
+- [ ] https://www.amazon.jobs/en/jobs/3205936/software-development-engineer-ii-amazon-foundational-security-services | Amazon | Software Development Engineer II, Amazon Foundational Security Services
+- [ ] https://www.amazon.jobs/en/jobs/3202509/software-development-engineer-guidance-and-personalization-amazon-ads | Amazon | Software Development Engineer, Guidance and Personalization - Amazon Ads
+- [ ] https://www.amazon.jobs/en/jobs/3196286/software-development-engineer-ii-post-silicon-validation | Amazon | Software Development Engineer II, Post Silicon Validation
+- [ ] https://www.amazon.jobs/en/jobs/3200023/software-development-engineer-ec2-software-defined-networking-networking-vpc-core | Amazon | Software Development Engineer, EC2 Software Defined Networking, Networking(VPC Core)
+- [ ] https://www.amazon.jobs/en/jobs/3206040/sde-ii-healthcare-ai | Amazon | SDE-II, Healthcare AI
+- [ ] https://www.amazon.jobs/en/jobs/3202416/software-development-engineer-ii-amazon-industrial-robotics | Amazon | Software Development Engineer II, Amazon Industrial Robotics
+- [ ] https://www.amazon.jobs/en/jobs/3199870/software-development-engineer-big-data-brand-metrics-and-benchmarks | Amazon | Software Development Engineer - Big Data, Brand Metrics and Benchmarks
+- [ ] https://www.amazon.jobs/en/jobs/10376578/software-development-engineer-ii-zerotouch-gsg | Amazon | Software Development Engineer II, ZeroTouch GSG
+- [ ] https://www.amazon.jobs/en/jobs/3196046/data-infrastructure-engineer-amazon-interactive-video-service-ivs | Amazon | Data Infrastructure Engineer, Amazon Interactive Video Service (IVS)
+- [ ] https://www.amazon.jobs/en/jobs/3202354/software-development-engineer-ii-fast-fashion-subsidiary-tech | Amazon | Software Development Engineer II, FaST (Fashion Subsidiary Tech)
+- [ ] https://www.amazon.jobs/en/jobs/10384787/software-development-engineer-ii-optimal-inventory-health | Amazon | Software Development Engineer II, Optimal Inventory Health
+- [ ] https://www.amazon.jobs/en/jobs/3202988/software-development-engineer-fraud-reduction-enforcement-systems-and-controls-in-advertising-fresca | Amazon | Software Development Engineer, Fraud Reduction Enforcement Systems and Controls in Advertising (FRESCA) 
+- [ ] https://www.amazon.jobs/en/jobs/3196201/software-development-engineer-ec2-software-defined-networking-ec2-networking-vpc-core | Amazon | Software Development Engineer, EC2 Software Defined Networking, EC2 Networking(VPC Core)
+- [ ] https://www.amazon.jobs/en/jobs/3199819/software-development-engineer-bigmac-hyperplane | Amazon | Software Development Engineer, BigMac Hyperplane
+- [ ] https://www.amazon.jobs/en/jobs/3194567/software-development-engineer-healthcare-ai | Amazon | Software Development Engineer, Healthcare AI
+- [ ] https://www.amazon.jobs/en/jobs/3196444/software-development-engineer-ec2-cross-region-peering | Amazon | Software Development Engineer, EC2 Cross Region Peering
+- [ ] https://www.amazon.jobs/en/jobs/3198774/software-development-engineer-seller-assistant-spx | Amazon | Software Development Engineer, Seller Assistant, SPX
+- [ ] https://www.amazon.jobs/en/jobs/3205553/software-development-engineer-ii-aws-data-processing-and-analytics-team | Amazon | Software Development Engineer - II, AWS Data Processing and Analytics team 
+- [ ] https://www.amazon.jobs/en/jobs/3200918/software-development-engineer-aws-transform-vmware | Amazon | Software Development Engineer, AWS Transform VMware 
+- [ ] https://www.amazon.jobs/en/jobs/3189496/jr-software-development-engineer-sunnyvale-ca-jr-developer-program | Amazon | Jr. Software Development Engineer - Sunnyvale, CA, Jr. Developer Program
+- [ ] https://www.amazon.jobs/en/jobs/3202191/software-development-engineer-aws-agentic-ai | Amazon | Software Development Engineer, AWS Agentic AI
+- [ ] https://www.amazon.jobs/en/jobs/3188438/software-development-engineer-apprentice-military-veterans | Amazon | Software Development Engineer Apprentice - Military Veterans
+- [ ] https://www.amazon.jobs/en/jobs/3195614/software-development-engineer-foundational-security | Amazon | Software development engineer, Foundational Security
+- [ ] https://www.amazon.jobs/en/jobs/3206756/software-development-engineer-aws-security | Amazon | Software Development Engineer, AWS Security 
+- [ ] https://www.amazon.jobs/en/jobs/3188778/software-development-engineer-aws-wwco-partner-systems | Amazon | Software Development Engineer, AWS WWCO Partner Systems
+- [ ] https://www.amazon.jobs/en/jobs/3187250/software-dev-engineer-ii-secure-customer-content-storage-and-analytics-aws-applied-ai-solution-core-services | Amazon | Software Dev Engineer II, Secure Customer Content Storage and Analytics, AWS Applied AI Solution – Core Services
+- [ ] https://www.amazon.jobs/en/jobs/3190513/software-development-engineer-ii-item-pipeline | Amazon | Software Development Engineer II, Item Pipeline
+- [ ] https://www.amazon.jobs/en/jobs/10390242/software-development-engineer-s3-request-processing | Amazon | Software Development Engineer, S3 Request Processing 
+- [ ] https://www.amazon.jobs/en/jobs/3194584/software-development-engineer-ii-robotics-arm-compute-bsp | Amazon | Software Development Engineer II, Robotics ARM Compute BSP
+- [ ] https://www.amazon.jobs/en/jobs/3198929/software-development-engineer-robotics-frontier-ai-robotics | Amazon | Software Development Engineer - Robotics, Frontier AI Robotics
+- [ ] https://www.amazon.jobs/en/jobs/3191724/software-development-engineer-aws-partnerships | Amazon | Software Development Engineer, AWS Partnerships
+- [ ] https://www.amazon.jobs/en/jobs/3198858/software-development-engineer-aws-marketplace-buyer-fulfillment | Amazon | Software Development Engineer, AWS Marketplace Buyer Fulfillment
+- [ ] https://www.amazon.jobs/en/jobs/3179205/software-development-engineer-military-veterans | Amazon | Software Development Engineer - Military Veterans
+- [ ] https://www.amazon.jobs/en/jobs/3181978/neuron-collectives-software-engineer-trainium-collectives | Amazon | Neuron Collectives Software Engineer, Trainium Collectives
+- [ ] https://www.amazon.jobs/en/jobs/3203029/software-development-engineer-ec2-capacity-optimization | Amazon | Software Development Engineer, EC2 Capacity Optimization
+- [ ] https://www.amazon.jobs/en/jobs/10381876/software-development-engineer-ec2-ultraserver-delivery-team | Amazon | Software Development Engineer, EC2 UltraServer Delivery Team
+- [ ] https://www.amazon.jobs/en/jobs/10391194/software-development-engineer-frontier-core-platform-team | Amazon | Software Development Engineer, Frontier Core Platform Team 
+- [ ] https://www.amazon.jobs/en/jobs/3192375/software-development-engineer-iii-sponsored-products-and-brands | Amazon | Software Development Engineer III, Sponsored Products and Brands
+- [ ] https://www.amazon.jobs/en/jobs/3178943/machine-learning-engineer-ii-special-projects | Amazon | Machine Learning Engineer II, Special Projects
+- [ ] https://www.amazon.jobs/en/jobs/3203694/software-development-engineer-alexa-endpoint-experiences | Amazon | Software Development Engineer, Alexa Endpoint Experiences
+- [ ] https://www.amazon.jobs/en/jobs/3175965/2026-annapurna-labs-at-aws-early-career-us-machine-learning-systems-silicon-innovation | Amazon | 2026 Annapurna Labs at AWS, Early Career (US) - Machine Learning Systems & Silicon Innovation
+- [ ] https://www.amazon.jobs/en/jobs/3184442/software-development-engineer-amazon-interactive-video-service-ivs | Amazon | Software Development Engineer, Amazon Interactive Video Service (IVS)
+- [ ] https://www.amazon.jobs/en/jobs/3176529/software-development-engineer-last-mile-delivery | Amazon | Software Development Engineer, Last Mile Delivery 
+- [ ] https://www.amazon.jobs/en/jobs/10387543/software-development-engineer-ec2-provisioning-host-ingest | Amazon | Software Development Engineer, EC2 Provisioning Host Ingest
+- [ ] https://www.amazon.jobs/en/jobs/3185336/software-development-engineer-ml-systems-annapurna-labs | Amazon | Software Development Engineer, ML Systems, Annapurna Labs
+- [ ] https://www.amazon.jobs/en/jobs/10373839/software-development-engineer-aws-elastic-disaster-recovery | Amazon | Software Development Engineer, AWS Elastic Disaster Recovery
+- [ ] https://www.amazon.jobs/en/jobs/3181306/software-engineer-ii-amazon-interactive-video-service-ivs | Amazon | Software Engineer II, Amazon Interactive Video Service (IVS)
+- [ ] https://www.amazon.jobs/en/jobs/3177934/software-development-engineer-2026-us | Amazon | Software Development Engineer - 2026 (US)
+- [ ] https://www.amazon.jobs/en/jobs/3175027/software-development-engineer-music-metrics-data-platform | Amazon | Software Development Engineer, Music Metrics & Data Platform
+- [ ] https://www.amazon.jobs/en/jobs/3177178/software-development-engineer-ii-prime-air-prime-air | Amazon | Software Development Engineer II, Prime Air, Prime Air
+- [ ] https://www.amazon.jobs/en/jobs/3169819/software-development-engineer-ii-ai-ml-elastic-collectives-annapurna-labs | Amazon | Software Development Engineer II, AI/ML Elastic Collectives - Annapurna Labs
+- [ ] https://www.amazon.jobs/en/jobs/3187422/software-development-engineer-network-product-development | Amazon | Software Development Engineer, Network Product Development
+- [ ] https://www.amazon.jobs/en/jobs/3163516/software-development-engineer-iii-annapurna-labs | Amazon | Software Development Engineer III, Annapurna Labs
+- [ ] https://www.amazon.jobs/en/jobs/3175270/software-engineer-ai-ml-aws-neuron-distributed-training-performance-optimization | Amazon | Software Engineer- AI/ML, AWS Neuron Distributed Training - Performance Optimization
+- [ ] https://www.amazon.jobs/en/jobs/3160310/software-development-engineer-robotics-frontier-ai-robotics | Amazon | Software Development Engineer- Robotics, Frontier AI Robotics
+- [ ] https://www.amazon.jobs/en/jobs/3170656/software-development-engineer-ml-agi-customization-agi-customization | Amazon | Software Development Engineer (ML), AGI Customization, AGI Customization
+- [ ] https://www.amazon.jobs/en/jobs/3170644/machine-learning-engineer-ii-agi-customization | Amazon | Machine Learning Engineer II  , AGI Customization
+- [ ] https://www.amazon.jobs/en/jobs/3156696/software-development-engineer | Amazon | Software Development Engineer 
+- [ ] https://www.amazon.jobs/en/jobs/3156628/software-development-engineer-amazon-ads | Amazon | Software Development Engineer, Amazon Ads
+- [ ] https://www.amazon.jobs/en/jobs/3166602/software-development-engineer-device-guardians | Amazon | Software Development Engineer, Device Guardians
+- [ ] https://www.amazon.jobs/en/jobs/3155750/software-engineer-i | Amazon | Software Engineer I
+- [ ] https://www.amazon.jobs/en/jobs/3154601/jr-software-development-engineer-san-luis-obispo-ca-jr-developer-program | Amazon | Jr. Software Development Engineer - San Luis Obispo, CA, Jr. Developer Program
+- [ ] https://www.amazon.jobs/en/jobs/3169810/software-development-engineer-ring-ring-cs-engineering | Amazon | Software Development Engineer, Ring, Ring CS Engineering
+- [ ] https://www.amazon.jobs/en/jobs/3163571/software-development-engineer-ii-employee-onboarding-experience-joining-orchestrations | Amazon | Software Development Engineer II,  Employee Onboarding Experience- Joining Orchestrations
+- [ ] https://www.amazon.jobs/en/jobs/3177801/software-development-engineer-ii-amazon-optics | Amazon | Software Development Engineer II, Amazon Optics
+- [ ] https://www.amazon.jobs/en/jobs/3145977/software-engineer-creator-sponsorships | Amazon | Software Engineer, Creator Sponsorships
+- [ ] https://www.amazon.jobs/en/jobs/3144341/software-development-engineer-amazon-leo-us | Amazon | Software Development Engineer – Amazon Leo (US)
+- [ ] https://www.amazon.jobs/en/jobs/3141992/software-development-engineer-aws-transform | Amazon | Software Development Engineer, AWS Transform 
+- [ ] https://www.amazon.jobs/en/jobs/3139832/software-development-engineer-ai-ml-aws-neuron | Amazon | Software Development Engineer - AI/ML, AWS Neuron
+- [ ] https://www.amazon.jobs/en/jobs/3137373/device-software-engineer-amazon-leo-for-government | Amazon | Device Software Engineer, Amazon Leo for Government
+- [ ] https://www.amazon.jobs/en/jobs/3139367/software-development-engineer-ring-neighbors | Amazon | Software Development Engineer, Ring Neighbors
+- [ ] https://www.amazon.jobs/en/jobs/3133398/full-stack-software-engineer-amazon-leo-oisl | Amazon | Full Stack Software Engineer, Amazon Leo OISL
+- [ ] https://www.amazon.jobs/en/jobs/3132873/expert-consultant-software-engineer-agi-data-services | Amazon | Expert Consultant - Software Engineer, AGI - Data Services
+- [ ] https://www.amazon.jobs/en/jobs/3205437/expert-consultant-software-engineer-agi-data-services | Amazon | Expert Consultant- Software Engineer, AGI - Data Services
+- [ ] https://www.amazon.jobs/en/jobs/3131153/software-development-engineer-eero-b2b-team | Amazon | Software Development Engineer, eero B2B team
+- [ ] https://www.amazon.jobs/en/jobs/3126384/software-development-engineer-leo-trust-services | Amazon | Software Development Engineer, Leo Trust Services
+- [ ] https://www.amazon.jobs/en/jobs/3140908/full-stack-engineer-developer-agents-and-experiences | Amazon | Full Stack Engineer, Developer Agents and Experiences
+- [ ] https://www.amazon.jobs/en/jobs/3127822/sde-ml-engineer-frontier-ai-robotics | Amazon | SDE- ML Engineer, Frontier AI Robotics
+- [ ] https://www.amazon.jobs/en/jobs/3128924/software-development-engineer-ai-ml-aws-neuron-model-inference | Amazon | Software Development Engineer, AI/ML, AWS Neuron, Model Inference
+- [ ] https://www.amazon.jobs/en/jobs/3113621/software-engineer-monetization-ml | Amazon | Software Engineer, Monetization ML
+- [ ] https://www.amazon.jobs/en/jobs/3089270/software-development-engineer-ai-ml-inference-serving-aws-neuron | Amazon | Software Development Engineer AI/ML, Inference Serving, AWS Neuron
+- [ ] https://www.amazon.jobs/en/jobs/3091555/software-development-engineer-s3-keystone | Amazon | Software Development Engineer, S3 Keystone
+- [ ] https://www.amazon.jobs/en/jobs/3083623/device-software-engineer-amazon-leo-government | Amazon | Device Software Engineer, Amazon Leo Government 
+- [ ] https://www.amazon.jobs/en/jobs/3082168/software-engineer-i-ad-demand | Amazon | Software Engineer I- Ad Demand
+- [ ] https://www.amazon.jobs/en/jobs/3147714/machine-learning-engineer-aws-neuron-inference-annapurna-ml | Amazon | Machine Learning Engineer, AWS Neuron Inference, Annapurna ML
+- [ ] https://www.amazon.jobs/en/jobs/3067759/software-engineer-ii-ai-ml-aws-neuron-llm-inference-ai-ml-aws-neuron-model-inference | Amazon | Software Engineer II - AI/ML, AWS Neuron, LLM Inference, AI/ML, AWS Neuron, Model Inference
+- [ ] https://www.amazon.jobs/en/jobs/3041976/software-development-engineer-amazon-leo-for-government | Amazon | Software Development Engineer, Amazon Leo for Government
+- [ ] https://www.amazon.jobs/en/jobs/2994349/software-development-engineer-aws-compute-services | Amazon | Software Development Engineer, AWS Compute Services
+- [ ] https://www.amazon.jobs/en/jobs/2965262/software-development-engineer-ii-builderworks | Amazon | Software Development Engineer II, BuilderWorks
+- [ ] https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/San-Jose/Software-Development-Engineer_R167039 | Adobe | Software Development Engineer

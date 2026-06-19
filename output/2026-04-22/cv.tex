@@ -1,0 +1,193 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Min-Han Li} \\ \vspace{1pt}
+    \small +1-781-475-7402 $|$ \href{mailto:minhanli.wesley@gmail.com}{\underline{minhanli.wesley@gmail.com}} $|$
+    \href{https://linkedin.com/in/minhanliwesley}{\underline{linkedin.com/in/minhanliwesley}} $|$
+    San Jose, CA
+    %% Optional: uncomment to add GitHub
+    %% $|$ \href{}{\underline{}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Computer Science, Minor in Digital Media}{09/2024 -- 04/2026}
+      \resumeItem{Coursework: Building Scalable Distributed Systems, Cloud Computing, Object-Oriented Design, Software Development}
+
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {Bachelor of Science, Double Major in Computer Science and Chemical Engineering}{09/2016 -- 05/2022}
+      \resumeItem{Coursework: Advanced Web Development, Data Processing and Analysis, Data Structures and Algorithms}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Intern}{05/2025 -- 11/2025}
+      {ByteDance (TikTok) | Go, Python, SQL, Redis, Docker, RAG, Multi-Agent Systems}{San Jose, CA}
+      \resumeItemListStart
+    \resumeItem{Shipped AI-powered on-call diagnostic bot in Go serving 200+ internal users, reducing average resolution time 50\% (7$\rightarrow$3.5 days) by auto-aggregating ads data and relevant past incidents at ticket creation}
+    \resumeItem{Enabled knowledge-base-driven self-service powered by RAG and LLM-based routing that automates 50\% of 30+ weekly ad-platform issues, eliminating dependency on on-call engineers for common incidents}
+    \resumeItem{Developed 6+ integrated troubleshooting tools in Go --- permission verification, access checks, log-based user lookup, and one-click bug filing --- behind a unified card interface accessible to non-technical staff}
+    \resumeItem{Designed multi-agent diagnostic workflows from internal runbooks for ad delivery debugging, reducing manual escalations previously involving 10+ people per incident}
+    \resumeItem{Built knowledge pipeline converting resolved incidents into searchable articles via LLM chat summarization and RAG, with Redis caching on high-frequency lookups to minimize query latency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{11/2024 -- 01/2025}
+      {ReMo | Python, Go, FastAPI, YOLOv11, Docker, React, Zustand, AWS ECS}{Portland, ME}
+      \resumeItemListStart
+    \resumeItem{Developed backend services using Golang and FastAPI, enabling sub-3s inference latency for multi-stage OCR and metadata extraction}
+    \resumeItem{Engineered a 90\% accurate book spine recognition pipeline with YOLOv11, Internvl, and custom LLM-based metadata extraction}
+    \resumeItem{Optimized frontend bundle size and rendering performance by implementing lazy-loading and code-splitting in React, reducing initial page load time by 25\%}
+    \resumeItem{Containerized and deployed services via Docker, AWS ECS, and API Gateway for high availability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{07/2023 -- 08/2023}
+      {Yanray Inc. | C\#, .NET Core, Azure, Redis, Cosmos DB, Robot Framework}{Taipei, Taiwan}
+      \resumeItemListStart
+    \resumeItem{Delivered 95\% structured field extraction accuracy by building a business card recognition pipeline with Azure AI Vision and a custom LLM}
+    \resumeItem{Boosted metadata retrieval speed by 31\% (175ms $\rightarrow$ 120ms) by caching reference lookups in Redis and optimizing Cosmos DB queries}
+    \resumeItem{Applied SDLC best practices to develop, test, and deploy the backend on Azure App Service, integrating telemetry with Application Insights}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research \& Development Intern}{07/2022 -- 08/2022}
+      {Acer | Python, OpenVINO, YOLOv7, FaceNet, Model Quantization, PyTorch, ONNX}{Taipei, Taiwan}
+      \resumeItemListStart
+    \resumeItem{Built a real-time meeting assistant that performed face and QR recognition under 300ms latency by combining model training, OpenVINO quantization, and async inference}
+    \resumeItem{Trained and fine-tuned YOLOv7 and FaceNet models for QR detection and face recognition, optimizing for both accuracy and deployment efficiency}
+    \resumeItem{Reduced model latency by 50\% through INT8 quantization and model conversion for CPU deployment}
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+%% Optional: Projects section. Leave  empty in render to skip.
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{Languages}{: Java, Python, C++, JavaScript, C\#, TypeScript, Ruby, Golang, Swift, Scala} \\
+\textbf{Frameworks \& Tools}{: Spring Boot, .NET, Dropwizard, Node.js, React, Maven, JUnit, Tomcat, Bazel} \\
+\textbf{DevOps}{: AWS, GCP, Azure, Kubernetes, Message Queue, OpenFeign, Eureka, Docker, Microservices, RabbitMQ} \\
+\textbf{Databases}{: MySQL, PostgreSQL, Redis, MongoDB, NoSQL, Iceberg, MyBatis, Hibernate, Spark, Hadoop} \\
+\textbf{Machine Learning}{: PyTorch, XGBoost, scikit-learn, TensorFlow} \hspace{5pt} \textbf{OS}{: macOS, Windows, Linux}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

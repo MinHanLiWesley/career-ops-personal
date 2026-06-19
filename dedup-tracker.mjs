@@ -6,12 +6,30 @@
  * Keeps entry with highest score. If discarded entry had more advanced status,
  * preserves that status. Merges notes.
  *
- * Run: node career-ops/dedup-tracker.mjs [--dry-run]
+ * Run: node career-ops/dedup-tracker.mjs [--dry-run] [--json]
  */
 
 import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+
+if (process.argv.includes('--help-json')) {
+  process.stdout.write(JSON.stringify({
+    name: 'dedup-tracker',
+    description: 'Remove duplicate rows from applications.md by normalized company + fuzzy role match. Keeps the row with the highest score and promotes its status if a removed twin reached a more advanced pipeline state.',
+    flags: [
+      { name: '--dry-run', type: 'boolean', description: 'Preview changes without writing' },
+      { name: '--json', type: 'boolean', description: 'Emit machine-readable JSON instead of human text' },
+      { name: '--help-json', type: 'boolean', description: 'Print this schema and exit' },
+    ],
+    outputs: {
+      text: 'Per-removal log + summary; backup written to applications.md.bak',
+      json: { schema: '{ ok, dryRun, entries, removed, promoted, written, changes[], warnings[] }' },
+    },
+    exitCodes: { 0: 'success or no-op' },
+  }) + '\n');
+  process.exit(0);
+}
 
 const CAREER_OPS = dirname(fileURLToPath(import.meta.url));
 // Support both layouts: data/applications.md (boilerplate) and applications.md (original)
@@ -19,6 +37,11 @@ const APPS_FILE = existsSync(join(CAREER_OPS, 'data/applications.md'))
   ? join(CAREER_OPS, 'data/applications.md')
   : join(CAREER_OPS, 'applications.md');
 const DRY_RUN = process.argv.includes('--dry-run');
+const JSON_OUT = process.argv.includes('--json');
+
+const changes = [];
+const warnings = [];
+const log = (msg) => { if (!JSON_OUT) console.log(msg); };
 
 // Ensure required directories exist (fresh setup)
 mkdirSync(join(CAREER_OPS, 'data'), { recursive: true });
@@ -121,7 +144,11 @@ function parseAppLine(line) {
 
 // Read
 if (!existsSync(APPS_FILE)) {
-  console.log('No applications.md found. Nothing to dedup.');
+  if (JSON_OUT) {
+    process.stdout.write(JSON.stringify({ ok: true, dryRun: DRY_RUN, noop: 'no-applications-file', removed: 0, promoted: 0, changes: [], warnings }) + '\n');
+  } else {
+    console.log('No applications.md found. Nothing to dedup.');
+  }
   process.exit(0);
 }
 const content = readFileSync(APPS_FILE, 'utf-8');
@@ -140,7 +167,7 @@ for (let i = 0; i < lines.length; i++) {
   }
 }
 
-console.log(`📊 ${entries.length} entries loaded`);
+log(`📊 ${entries.length} entries loaded`);
 
 // Group by company+role
 const groups = new Map();
@@ -152,6 +179,7 @@ for (const entry of entries) {
 
 // Find duplicates
 let removed = 0;
+let promoted = 0;
 const linesToRemove = new Set();
 
 for (const [company, companyEntries] of groups) {
@@ -194,9 +222,13 @@ for (const [company, companyEntries] of groups) {
       const lineIdx = entryLineMap.get(keeper.num);
       if (lineIdx !== undefined) {
         const parts = lines[lineIdx].split('|').map(s => s.trim());
+        const oldStatus = parts[6];
         parts[6] = bestStatus;
         lines[lineIdx] = '| ' + parts.slice(1, -1).join(' | ') + ' |';
-        console.log(`  📝 #${keeper.num}: status promoted to "${bestStatus}" (from #${cluster.find(e => e.status === bestStatus)?.num})`);
+        const sourceNum = cluster.find(e => e.status === bestStatus)?.num;
+        log(`  📝 #${keeper.num}: status promoted to "${bestStatus}" (from #${sourceNum})`);
+        changes.push({ action: 'promote', num: keeper.num, from: oldStatus, to: bestStatus, sourceNum });
+        promoted++;
       }
     }
 
@@ -207,7 +239,8 @@ for (const [company, companyEntries] of groups) {
       if (lineIdx !== undefined) {
         linesToRemove.add(lineIdx);
         removed++;
-        console.log(`🗑️  Remove #${dup.num} (${dup.company} — ${dup.role}, ${dup.score}) → kept #${keeper.num} (${keeper.score})`);
+        log(`🗑️  Remove #${dup.num} (${dup.company} — ${dup.role}, ${dup.score}) → kept #${keeper.num} (${keeper.score})`);
+        changes.push({ action: 'remove', num: dup.num, company: dup.company, role: dup.role, score: dup.score, keptNum: keeper.num, keptScore: keeper.score });
       }
     }
   }
@@ -219,14 +252,29 @@ for (const idx of sortedRemoveIndices) {
   lines.splice(idx, 1);
 }
 
-console.log(`\n📊 ${removed} duplicates removed`);
+log(`\n📊 ${removed} duplicates removed`);
 
+let written = false;
 if (!DRY_RUN && removed > 0) {
   copyFileSync(APPS_FILE, APPS_FILE + '.bak');
   writeFileSync(APPS_FILE, lines.join('\n'));
-  console.log('✅ Written to applications.md (backup: applications.md.bak)');
+  written = true;
+  log('✅ Written to applications.md (backup: applications.md.bak)');
 } else if (DRY_RUN) {
-  console.log('(dry-run — no changes written)');
+  log('(dry-run — no changes written)');
 } else {
-  console.log('✅ No duplicates found');
+  log('✅ No duplicates found');
+}
+
+if (JSON_OUT) {
+  process.stdout.write(JSON.stringify({
+    ok: true,
+    dryRun: DRY_RUN,
+    entries: entries.length,
+    removed,
+    promoted,
+    written,
+    changes,
+    warnings,
+  }) + '\n');
 }

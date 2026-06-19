@@ -11,13 +11,32 @@
  * If duplicate with higher score → update in-place, update report link
  * Validates status against states.yml (rejects non-canonical, logs warning)
  *
- * Run: node career-ops/merge-tracker.mjs [--dry-run] [--verify]
+ * Run: node career-ops/merge-tracker.mjs [--dry-run] [--verify] [--json]
  */
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, renameSync, existsSync } from 'fs';
 import { join, basename, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
+
+if (process.argv.includes('--help-json')) {
+  process.stdout.write(JSON.stringify({
+    name: 'merge-tracker',
+    description: 'Merge batch/tracker-additions/*.tsv into applications.md, deduping by report number, entry number, and company+role fuzzy match. Higher-score reruns update existing rows.',
+    flags: [
+      { name: '--dry-run', type: 'boolean', description: 'Preview changes without writing or moving TSVs' },
+      { name: '--verify', type: 'boolean', description: 'Run verify-pipeline.mjs after merging' },
+      { name: '--json', type: 'boolean', description: 'Emit machine-readable JSON instead of human text' },
+      { name: '--help-json', type: 'boolean', description: 'Print this schema and exit' },
+    ],
+    outputs: {
+      text: 'Per-row add/update/skip log + summary',
+      json: { schema: '{ ok, dryRun, added, updated, skipped, pendingFiles, movedToMerged, verify, changes[], warnings[] }' },
+    },
+    exitCodes: { 0: 'success or no-op', 1: 'verification failed (with --verify)' },
+  }) + '\n');
+  process.exit(0);
+}
 
 const CAREER_OPS = dirname(fileURLToPath(import.meta.url));
 // Support both layouts: data/applications.md (boilerplate) and applications.md (original)
@@ -28,6 +47,12 @@ const ADDITIONS_DIR = join(CAREER_OPS, 'batch/tracker-additions');
 const MERGED_DIR = join(ADDITIONS_DIR, 'merged');
 const DRY_RUN = process.argv.includes('--dry-run');
 const VERIFY = process.argv.includes('--verify');
+const JSON_OUT = process.argv.includes('--json');
+
+const warnings = [];
+const changes = [];
+const log = (msg) => { if (!JSON_OUT) console.log(msg); };
+const warn = (msg) => { if (JSON_OUT) warnings.push(String(msg)); else console.warn(msg); };
 
 // Ensure required directories exist (fresh setup)
 mkdirSync(join(CAREER_OPS, 'data'), { recursive: true });
@@ -63,7 +88,7 @@ function validateStatus(status) {
   // DUPLICADO/Repost → Discarded
   if (/^(duplicado|dup|repost)/i.test(lower)) return 'Discarded';
 
-  console.warn(`⚠️  Non-canonical status "${status}" → defaulting to "Evaluated"`);
+  warn(`⚠️  Non-canonical status "${status}" → defaulting to "Evaluated"`);
   return 'Evaluated';
 }
 
@@ -115,7 +140,7 @@ function parseTsvContent(content, filename) {
   if (content.startsWith('|')) {
     parts = content.split('|').map(s => s.trim()).filter(Boolean);
     if (parts.length < 8) {
-      console.warn(`⚠️  Skipping malformed pipe-delimited ${filename}: ${parts.length} fields`);
+      warn(`⚠️  Skipping malformed pipe-delimited ${filename}: ${parts.length} fields`);
       return null;
     }
     // Format: num | date | company | role | score | status | pdf | report | notes
@@ -134,7 +159,7 @@ function parseTsvContent(content, filename) {
     // Tab-separated
     parts = content.split('\t');
     if (parts.length < 8) {
-      console.warn(`⚠️  Skipping malformed TSV ${filename}: ${parts.length} fields`);
+      warn(`⚠️  Skipping malformed TSV ${filename}: ${parts.length} fields`);
       return null;
     }
 
@@ -176,7 +201,7 @@ function parseTsvContent(content, filename) {
   }
 
   if (isNaN(addition.num) || addition.num === 0) {
-    console.warn(`⚠️  Skipping ${filename}: invalid entry number`);
+    warn(`⚠️  Skipping ${filename}: invalid entry number`);
     return null;
   }
 
@@ -187,7 +212,11 @@ function parseTsvContent(content, filename) {
 
 // Read applications.md
 if (!existsSync(APPS_FILE)) {
-  console.log('No applications.md found. Nothing to merge into.');
+  if (JSON_OUT) {
+    process.stdout.write(JSON.stringify({ ok: true, dryRun: DRY_RUN, noop: 'no-applications-file', added: 0, updated: 0, skipped: 0, changes: [], warnings }) + '\n');
+  } else {
+    console.log('No applications.md found. Nothing to merge into.');
+  }
   process.exit(0);
 }
 const appContent = readFileSync(APPS_FILE, 'utf-8');
@@ -205,17 +234,25 @@ for (const line of appLines) {
   }
 }
 
-console.log(`📊 Existing: ${existingApps.length} entries, max #${maxNum}`);
+log(`📊 Existing: ${existingApps.length} entries, max #${maxNum}`);
 
 // Read tracker additions
 if (!existsSync(ADDITIONS_DIR)) {
-  console.log('No tracker-additions directory found.');
+  if (JSON_OUT) {
+    process.stdout.write(JSON.stringify({ ok: true, dryRun: DRY_RUN, noop: 'no-additions-dir', added: 0, updated: 0, skipped: 0, changes: [], warnings }) + '\n');
+  } else {
+    console.log('No tracker-additions directory found.');
+  }
   process.exit(0);
 }
 
 const tsvFiles = readdirSync(ADDITIONS_DIR).filter(f => f.endsWith('.tsv'));
 if (tsvFiles.length === 0) {
-  console.log('✅ No pending additions to merge.');
+  if (JSON_OUT) {
+    process.stdout.write(JSON.stringify({ ok: true, dryRun: DRY_RUN, noop: 'no-pending-additions', added: 0, updated: 0, skipped: 0, changes: [], warnings }) + '\n');
+  } else {
+    console.log('✅ No pending additions to merge.');
+  }
   process.exit(0);
 }
 
@@ -226,7 +263,7 @@ tsvFiles.sort((a, b) => {
   return numA - numB;
 });
 
-console.log(`📥 Found ${tsvFiles.length} pending additions`);
+log(`📥 Found ${tsvFiles.length} pending additions`);
 
 let added = 0;
 let updated = 0;
@@ -271,16 +308,18 @@ for (const file of tsvFiles) {
     const oldScore = parseScore(duplicate.score);
 
     if (newScore > oldScore) {
-      console.log(`🔄 Update: #${duplicate.num} ${addition.company} — ${addition.role} (${oldScore}→${newScore})`);
+      log(`🔄 Update: #${duplicate.num} ${addition.company} — ${addition.role} (${oldScore}→${newScore})`);
       const lineIdx = appLines.indexOf(duplicate.raw);
       if (lineIdx >= 0) {
         const updatedLine = `| ${duplicate.num} | ${addition.date} | ${addition.company} | ${addition.role} | ${addition.score} | ${duplicate.status} | ${duplicate.pdf} | ${addition.report} | Re-eval ${addition.date} (${oldScore}→${newScore}). ${addition.notes} |`;
         appLines[lineIdx] = updatedLine;
         updated++;
+        changes.push({ action: 'update', num: duplicate.num, company: addition.company, role: addition.role, oldScore, newScore });
       }
     } else {
-      console.log(`⏭️  Skip: ${addition.company} — ${addition.role} (existing #${duplicate.num} ${oldScore} >= new ${newScore})`);
+      log(`⏭️  Skip: ${addition.company} — ${addition.role} (existing #${duplicate.num} ${oldScore} >= new ${newScore})`);
       skipped++;
+      changes.push({ action: 'skip', company: addition.company, role: addition.role, existingNum: duplicate.num, existingScore: oldScore, newScore, reason: 'lower-or-equal-score' });
     }
   } else {
     // New entry — use the number from the TSV
@@ -290,7 +329,8 @@ for (const file of tsvFiles) {
     const newLine = `| ${entryNum} | ${addition.date} | ${addition.company} | ${addition.role} | ${addition.score} | ${addition.status} | ${addition.pdf} | ${addition.report} | ${addition.notes} |`;
     newLines.push(newLine);
     added++;
-    console.log(`➕ Add #${entryNum}: ${addition.company} — ${addition.role} (${addition.score})`);
+    log(`➕ Add #${entryNum}: ${addition.company} — ${addition.role} (${addition.score})`);
+    changes.push({ action: 'add', num: entryNum, company: addition.company, role: addition.role, score: addition.score, status: addition.status });
   }
 }
 
@@ -310,6 +350,7 @@ if (newLines.length > 0) {
 }
 
 // Write back
+let movedToMerged = 0;
 if (!DRY_RUN) {
   writeFileSync(APPS_FILE, appLines.join('\n'));
 
@@ -318,18 +359,36 @@ if (!DRY_RUN) {
   for (const file of tsvFiles) {
     renameSync(join(ADDITIONS_DIR, file), join(MERGED_DIR, file));
   }
-  console.log(`\n✅ Moved ${tsvFiles.length} TSVs to merged/`);
+  movedToMerged = tsvFiles.length;
+  log(`\n✅ Moved ${tsvFiles.length} TSVs to merged/`);
 }
 
-console.log(`\n📊 Summary: +${added} added, 🔄${updated} updated, ⏭️${skipped} skipped`);
-if (DRY_RUN) console.log('(dry-run — no changes written)');
+log(`\n📊 Summary: +${added} added, 🔄${updated} updated, ⏭️${skipped} skipped`);
+if (DRY_RUN) log('(dry-run — no changes written)');
 
 // Optional verify
+let verifyOk = null;
 if (VERIFY && !DRY_RUN) {
-  console.log('\n--- Running verification ---');
+  log('\n--- Running verification ---');
   try {
-    execFileSync('node', [join(CAREER_OPS, 'verify-pipeline.mjs')], { stdio: 'inherit' });
+    execFileSync('node', [join(CAREER_OPS, 'verify-pipeline.mjs')], { stdio: JSON_OUT ? 'pipe' : 'inherit' });
+    verifyOk = true;
   } catch (e) {
-    process.exit(1);
+    verifyOk = false;
+    if (!JSON_OUT) process.exit(1);
   }
+}
+
+if (JSON_OUT) {
+  process.stdout.write(JSON.stringify({
+    ok: verifyOk !== false,
+    dryRun: DRY_RUN,
+    added, updated, skipped,
+    pendingFiles: tsvFiles.length,
+    movedToMerged,
+    verify: verifyOk,
+    changes,
+    warnings,
+  }) + '\n');
+  if (verifyOk === false) process.exit(1);
 }

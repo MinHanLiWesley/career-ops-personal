@@ -1,0 +1,166 @@
+%-------------------------
+% Resume in LaTeX — Computational Chemistry / ML4Science track
+% Author : Jake Gutierrez (template) ; tailored for Min-Han Li
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Min-Han Li (Wesley)} \\ \vspace{1pt}
+    \small +1-781-475-7402 $|$ \href{mailto:minhan.li.wesley@gmail.com}{\underline{minhan.li.wesley@gmail.com}} $|$
+    \href{https://linkedin.com/in/minhanliwesley}{\underline{linkedin.com/in/minhanliwesley}} $|$
+    San Jose, CA
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Computer Science, Minor in Digital Media}{09/2024 -- 04/2026}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{CS coursework: Building Scalable Distributed Systems, Cloud Computing, Object-Oriented Design}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {B.S., Double Major in Chemical Engineering and Computer Science}{09/2016 -- 05/2022}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{ChemE coursework: Physical Chemistry, Thermodynamics, Reaction Engineering, Statistical Mechanics}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{05/2025 -- 11/2025}
+      {ByteDance (TikTok) $|$ Go, Python, SQL, Redis, RAG, Multi-Agent}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Shipped AI-powered on-call diagnostic bot in Go serving 200+ internal users, reducing average resolution time \textbf{50\%} (7$\rightarrow$3.5 days) by auto-aggregating ads data and relevant past incidents at ticket creation}
+        \resumeItem{Enabled knowledge-base-driven self-service powered by RAG and LLM-based routing that automates 50\% of 30+ weekly ad-platform issues, eliminating dependency on on-call engineers for common incidents}
+        \resumeItem{Turned a chat interface into a programmatic action layer for non-technical staff by building \textbf{6+} Go services that the diagnostic LLM agent invokes as tools --- permission checks, access verification, log search, and bug filing}
+        \resumeItem{Designed multi-agent diagnostic workflows from internal runbooks for ad delivery debugging, reducing manual escalations previously involving 10+ people per incident}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{11/2024 -- 01/2025}
+      {ReMo $|$ YOLOv11, FastAPI, Go, AWS ECS $|$ \href{https://github.com/MinHanLiWesley/book-spine-recognition}{github.com/MinHanLiWesley/book-spine-recognition}}{Portland, ME}
+      \resumeItemListStart
+        \resumeItem{Delivered ReMo's MVP for fundraising --- a \textbf{90\%} accurate book spine recognition pipeline combining YOLOv11 detection, Internvl recognition, and custom LLM-based metadata extraction}
+        \resumeItem{Achieved \textbf{sub-3s} end-to-end inference latency for the multi-stage OCR + metadata extraction system by building Go and FastAPI backend services}
+        \resumeItem{Containerized and deployed services via Docker, AWS ECS, and API Gateway for high availability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer Intern}{01/2021 -- 06/2021}
+      {Formosa Plastics $|$ PyTorch, Aspen Plus, AutoML, ML4Sci}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Reduced EDC cracker outlet-concentration prediction error \textbf{75\%} by training an AutoML-tuned neural network on \textbf{80K} measurements from two plants as a residual correction to Aspen Plus simulation}
+        \resumeItem{Scaled the correction to Formosa's full \textbf{18-reactor} production cascade by calibrating one shared single-PFR model that chains in series, eliminating per-configuration retraining}
+        \resumeItem{Accelerated PFR simulation \textbf{3$\times$} over Aspen Plus for Formosa engineers designing a new US production plant by deploying a React frontend and Python Flask backend that wraps Cantera and the FCN correction}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{07/2020 -- 12/2020}
+      {Computational Chemistry Lab, NTU $|$ RL, PyTorch, Self-Attention, Behavior Cloning}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Enabled RL training for force-field geometry optimization by building an OpenAI Gym MDP environment with \textbf{20+} iterated reward/state configurations}
+        \resumeItem{Designed a multi-head self-attention policy with residual layer-norm, trained via behavior cloning over BFGS for varying-size molecules}
+        \resumeItem{Explored reaction-path extension via Nudged Elastic Band (NEB) baselines and multiple RL algorithms (PPO, SAC) across force-field environments}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\small B.-C. Ke, \textbf{M.-H. Li}, et al. \textit{TurnAhead: Designing 3-DoF Rotational Haptic Cues to Improve First-person Viewing (FPV) Experiences.} \textbf{CHI 2023, Honorable Mention Award}. Prototyped a VR haptic feedback system in Unity / Meta Quest 2 / Arduino with 3D-printed hardware; validated through 4 user studies with 30+ participants. \href{https://dl.acm.org/doi/10.1145/3544548.3581443}{doi:10.1145/3544548.3581443}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{ML \& Engineering}{: PyTorch, scikit-learn, XGBoost, TensorFlow, ONNX, OpenVINO, RL (PPO, SAC, BC), self-attention, ML4Sci, AutoML, RAG, multi-agent, quantization, NumPy, SciPy, pandas, Cantera, Aspen Plus} \\
+\textbf{Languages \& Infra}{: Python, C++, Go, Java, JavaScript/TypeScript, Scala; PostgreSQL, MySQL, Redis, MongoDB, Spark, AWS, GCP, Azure, Docker, Kubernetes}
+    }}
+ \end{itemize}
+
+\end{document}

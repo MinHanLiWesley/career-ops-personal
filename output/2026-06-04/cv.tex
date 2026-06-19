@@ -1,0 +1,161 @@
+%-------------------------
+% Resume in LaTeX -- Luma AI, Agent Behavior Designer track
+% Tailored for Min-Han Li
+% Template: Jake Gutierrez / sb2nov ; MIT License
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Min-Han Li} \\ \vspace{1pt}
+    \small +1-781-475-7402 $|$ \href{mailto:minhan.li.wesley@gmail.com}{\underline{minhan.li.wesley@gmail.com}} $|$
+    \href{https://linkedin.com/in/minhanliwesley}{\underline{LinkedIn}} $|$
+    \href{https://github.com/MinHanLiWesley}{\underline{GitHub}} $|$
+    San Jose, CA
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Computer Science, Minor in Digital Media}{09/2024 -- 04/2026}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{Coursework: Large Language Models, Computer Vision, Cloud Computing, Object-Oriented Design}
+      \resumeItemListEnd
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {B.S., Double Major in Computer Science and Chemical Engineering}{09/2016 -- 05/2022}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem{Coursework: Machine Learning, Computer Graphics, Cognitive Science, Human-Computer Interaction}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{05/2025 -- 11/2025}
+      {ByteDance (TikTok) $|$ Python, Go, LLM Agents, RAG, Multi-Agent, Prompting}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Shipped an LLM-powered ad-platform diagnostic agent for \textbf{200+} on-call engineers, reducing resolution time \textbf{50\%}, by architecting prompt stacks that route tickets and retrieve relevant past incidents at ticket creation}
+        \resumeItem{Enabled non-technical staff to self-resolve routine incidents without engineer escalation by designing a tool-calling layer of \textbf{6+} Go tools the LLM invokes for permission checks, access verification, log lookup, and bug filing}
+        \resumeItem{Automated \textbf{50\%} of \textbf{30+} weekly incidents and removed handoffs that previously involved \textbf{10+} specialists per ticket by encoding internal runbooks into multi-agent workflows via RAG and LLM routing}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{11/2024 -- 01/2025}
+      {ReMo $|$ Python, Go, FastAPI, YOLOv11, React, Docker, AWS ECS}{Portland, ME}
+      \resumeItemListStart
+        \resumeItem{Delivered ReMo's fundraising MVP, a book spine recognition pipeline reaching \textbf{90\%} field-level extraction accuracy, by combining YOLOv11 detection, Internvl recognition, and custom LLM-based metadata extraction}
+        \resumeItem{Sustained \textbf{sub-3s} p95 end-to-end latency across the multi-stage OCR and metadata extraction pipeline by engineering the Go and FastAPI backend services}
+        \resumeItem{Maintained high availability for the backend by containerizing services with Docker and deploying to AWS ECS}
+        \resumeItem{Cut initial page load \textbf{25\%} by applying lazy-loading and code-splitting to the React frontend}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{07/2023 -- 08/2023}
+      {Yanray Inc. $|$ C\#, .NET Core, Azure App Service, Azure AI Vision, Redis, Cosmos DB}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Delivered \textbf{95\%} field-level extraction accuracy on a business card recognition pipeline by combining Azure AI Vision with a custom LLM, deployed and monitored on Azure App Service with Application Insights}
+        \resumeItem{Cut metadata lookup latency \textbf{31\%}, \textbf{175ms} to \textbf{120ms}, by caching in Redis and tuning Cosmos DB queries}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant, Reinforcement Learning}{07/2020 -- 12/2021}
+      {Computational Chemistry Lab, NTU $|$ Python, PyTorch, RL, Self-Attention, Behavior Cloning}{Taipei, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Built an OpenAI Gym MDP environment for force-field geometry optimization across \textbf{20+} reward/state iterations}
+        \resumeItem{Implemented a multi-head self-attention policy with residual layer-norm, trained via behavior cloning over BFGS demonstrations for permutation invariance across molecule sizes; explored \textbf{PPO} and \textbf{SAC} for reaction-path search}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Pebble} $|$ \emph{AI Psychologist startup $\cdot$ Python, LLM agent, safety, evals}}{2026}
+      \resumeItemListStart
+        \resumeItem{Architected a CBT mental-health agent where every node carries a written SPEC, implementation, and automated evaluator, by adopting the skill-as-node design from Rollwage et al. 2026 in \textit{Nature Medicine}}
+        \resumeItem{Engineered a defense-in-depth safety stack verified end-to-end with \textbf{95} automated tests and per-decision JSONL audit logging across multi-turn sessions, by composing risk detection, jailbreak detection, a hardcoded crisis protocol, and an output guard that fails closed on violation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\small B.-C. Ke, \textbf{M.-H. Li}, et al. \textit{TurnAhead: Designing 3-DoF Rotational Haptic Cues to Improve First-person Viewing (FPV) Experiences.} \textbf{CHI 2023, Honorable Mention Award}. Designed and iteratively refined a multimodal VR interaction system in Unity, Meta Quest 2, and Arduino with 3D-printed hardware, validated through 4 controlled user studies with 30+ participants. \href{https://dl.acm.org/doi/10.1145/3544548.3581443}{doi:10.1145/3544548.3581443}
+
+\end{document}

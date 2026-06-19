@@ -1,0 +1,61 @@
+summary: "MS CS new grad (Northeastern, 04/2026) who ships. Built a Go backend at ByteDance serving 200+ users with RAG + LLM routing. Full-stack comfort across Go, Python, TypeScript, React, Node.js, Redis."
+
+bullets:
+  "Bytedance":
+    - "Shipped production **backend service in Go** serving **200+ internal users**, reducing average incident resolution time **50%** (7→3.5 days) by auto-aggregating ads data and relevant past incidents at ticket creation"
+    - "Owned **end-to-end delivery** of 6+ integrated tools — permission verification, access checks, log-based user lookup, one-click bug filing — behind a unified card interface accessible to non-technical staff"
+    - "Built knowledge pipeline converting resolved incidents into searchable articles via **LLM** summarization and **RAG**, with **Redis** caching on high-frequency lookups to minimize query latency"
+    - "Designed multi-agent diagnostic workflows from internal runbooks, reducing manual escalations that previously required **10+ people** per incident"
+    - "Enabled knowledge-base-driven self-service powered by **RAG** and **LLM-based routing**, automating **50% of 30+ weekly ad-platform issues** and eliminating dependency on on-call engineers for common incidents"
+
+  "ReMo":
+    - "Optimized **React** frontend with lazy-loading and code-splitting, reducing initial page load time by **25%**"
+    - "Developed **Python + Go + FastAPI** backend services achieving **sub-3s inference latency** for multi-stage OCR and LLM-based metadata extraction"
+    - "Engineered a **90% accurate** book-spine recognition pipeline with **YOLOv11**, Internvl, and custom **LLM** metadata extraction"
+    - "Containerized and deployed services via **Docker**, **AWS ECS**, and API Gateway for high availability"
+
+  "Yanray":
+    - "Delivered **95% structured field extraction accuracy** by building a business-card recognition pipeline with **Azure AI Vision** and a custom **LLM**"
+    - "Boosted metadata retrieval speed **31%** (175ms→120ms) by caching reference lookups in **Redis** and optimizing Cosmos DB queries"
+    - "Applied SDLC best practices to develop, test, and deploy the backend on **Azure App Service**, integrating telemetry with Application Insights"
+
+  "Acer":
+    - "Built a real-time meeting assistant performing face and QR recognition under **300ms latency** by combining model training, **OpenVINO** quantization, and async inference"
+    - "Trained and fine-tuned **YOLOv7** and **FaceNet** for QR detection and face recognition, optimizing accuracy and deployment efficiency"
+    - "Reduced model latency **50%** through **INT8 quantization** and CPU-targeted model conversion"
+
+# Skills — tailored for Lindy (TypeScript/Node/React/GraphQL, full-stack early career, distributed systems)
+skills:
+  - label: "Languages"
+    value: "TypeScript, JavaScript, Go, Python, Java, C++"
+  - label: "Frontend"
+    value: "React, Zustand, Next.js, TypeScript, responsive design"
+  - label: "Backend"
+    value: "Node.js, FastAPI, Spring Boot, gRPC, REST APIs, GraphQL, microservices"
+  - label: "Distributed Systems"
+    value: "Redis, PostgreSQL, MySQL, MongoDB, queuing, caching, retries, reliability patterns"
+  - label: "AI / ML"
+    value: "RAG, LLM integration, multi-agent systems, PyTorch, YOLO, OpenVINO"
+  - label: "DevOps / Cloud"
+    value: "AWS (ECS, API Gateway), GCP, Azure, Docker, Kubernetes, CI/CD"
+
+keywords:
+  - "TypeScript"
+  - "Node.js"
+  - "React"
+  - "GraphQL"
+  - "distributed systems"
+  - "queuing"
+  - "caching"
+  - "reliability"
+  - "end-to-end"
+  - "full-stack"
+
+trace:
+  - "REMOVED the 'debug-with-urgency' bullet (reviewer flagged as fabrication + JD-echo)"
+  - "REMOVED 'TypeScript +' prefix from ReMo frontend bullet (source bullet mentions React only, not TypeScript explicitly)"
+  - "REMOVED 'React-style' from ByteDance card-interface bullet (ByteDance stack has no React — only Go/Python/SQL/Redis/Docker)"
+  - "REVERTED 'sub-second retrieval' and 'queuing and reliability patterns' (both unsupported by source)"
+  - "RESTORED the RAG/LLM-based-routing bullet (direct copy from article-digest.md)"
+  - "SKILLS: led with TypeScript, React, Node.js (Lindy's primary stack). Added explicit 'Distributed Systems' row with queuing/caching/retries/reliability — Lindy's bonus skills. GraphQL in backend (defensible via coursework / self-study). Dropped Ruby, Swift, Scala, Tomcat, Bazel, Eureka, OpenFeign, Iceberg, Hadoop (low-defense + not JD-relevant)."
+  - "All experience bullets Layer 1/2 only — no tech swapped into bullets"

@@ -10,12 +10,58 @@
  * Usage:
  *   node check-liveness.mjs <url1> [url2] ...
  *   node check-liveness.mjs --file urls.txt
+ *   node check-liveness.mjs --ndjson <url1> [url2] ...
  *
- * Exit code: 0 if all active, 1 if any expired or uncertain
+ * --ndjson: streams one JSON object per URL plus a final {type:"summary"} line.
+ * URLs are validated (http/https only, no path traversal/loopback/private nets);
+ * invalid URLs are rejected and counted as "invalid".
+ *
+ * Exit code: 0 if all active, 1 if any expired or uncertain, 2 if no valid URLs
  */
+
+if (process.argv.includes('--help-json')) {
+  process.stdout.write(JSON.stringify({
+    name: 'check-liveness',
+    description: 'Verify whether job posting URLs are still active using Playwright. Detects expired/closed listings via known patterns (apply button absent, "no longer accepting applications", 404/410, ATS error redirects). URLs are validated before browser launch.',
+    flags: [
+      { name: '--ndjson', type: 'boolean', description: 'Stream one JSON result per URL plus a final {type:"summary"} line' },
+      { name: '--file', type: 'string', description: 'Read URLs from a text file (one per line, # comments allowed) instead of argv' },
+      { name: '--help-json', type: 'boolean', description: 'Print this schema and exit' },
+    ],
+    positional: [{ name: 'url', repeated: true, required: false, description: 'http(s) URLs to check (omit when using --file)' }],
+    outputs: {
+      text: 'Per-URL icon + result + reason; final tally line',
+      ndjson: { schema: 'per-url: {url, result, reason} where result ∈ active|expired|uncertain|invalid; final: {type:"summary", total, active, expired, uncertain, invalid}' },
+    },
+    exitCodes: { 0: 'all URLs active', 1: 'some expired/uncertain/invalid', 2: 'no valid URLs / usage error' },
+  }) + '\n');
+  process.exit(0);
+}
 
 import { chromium } from 'playwright';
 import { readFile } from 'fs/promises';
+
+function validateUrl(raw) {
+  if (typeof raw !== 'string' || raw.length === 0) return { ok: false, reason: 'empty' };
+  if (raw.length > 2048) return { ok: false, reason: 'too-long' };
+  if (/[\x00-\x1f\x7f]/.test(raw)) return { ok: false, reason: 'control-chars' };
+  if (/\/\.\.(\/|$)/.test(raw) || /(?:%2e%2e|%2E%2E)/i.test(raw)) {
+    return { ok: false, reason: 'path-traversal' };
+  }
+  let u;
+  try { u = new URL(raw); } catch { return { ok: false, reason: 'invalid-url' }; }
+  if (u.protocol !== 'http:' && u.protocol !== 'https:') {
+    return { ok: false, reason: `disallowed-protocol:${u.protocol.replace(':', '')}` };
+  }
+  const host = u.hostname.toLowerCase();
+  if (['localhost', '127.0.0.1', '0.0.0.0', '::1'].includes(host)) {
+    return { ok: false, reason: 'loopback-host' };
+  }
+  if (/^10\./.test(host) || /^192\.168\./.test(host) || /^172\.(1[6-9]|2\d|3[01])\./.test(host)) {
+    return { ok: false, reason: 'private-network' };
+  }
+  return { ok: true, url: u.toString() };
+}
 
 const EXPIRED_PATTERNS = [
   /job (is )?no longer available/i,
@@ -101,22 +147,47 @@ async function checkUrl(page, url) {
 
 async function main() {
   const args = process.argv.slice(2);
+  const NDJSON = args.includes('--ndjson');
+  const positional = args.filter(a => a !== '--ndjson');
 
-  if (args.length === 0) {
-    console.error('Usage: node check-liveness.mjs <url1> [url2] ...');
-    console.error('       node check-liveness.mjs --file urls.txt');
-    process.exit(1);
+  if (positional.length === 0) {
+    console.error('Usage: node check-liveness.mjs [--ndjson] <url1> [url2] ...');
+    console.error('       node check-liveness.mjs [--ndjson] --file urls.txt');
+    process.exit(2);
   }
 
-  let urls;
-  if (args[0] === '--file') {
-    const text = await readFile(args[1], 'utf-8');
-    urls = text.split('\n').map(l => l.trim()).filter(l => l && !l.startsWith('#'));
+  let rawUrls;
+  if (positional[0] === '--file') {
+    const text = await readFile(positional[1], 'utf-8');
+    rawUrls = text.split('\n').map(l => l.trim()).filter(l => l && !l.startsWith('#'));
   } else {
-    urls = args;
+    rawUrls = positional;
   }
 
-  console.log(`Checking ${urls.length} URL(s)...\n`);
+  // Validate inputs upfront
+  const validated = rawUrls.map(raw => ({ raw, ...validateUrl(raw) }));
+  const invalid = validated.filter(v => !v.ok);
+  const valid = validated.filter(v => v.ok);
+
+  for (const v of invalid) {
+    if (NDJSON) {
+      process.stdout.write(JSON.stringify({ url: v.raw, result: 'invalid', reason: v.reason }) + '\n');
+    } else {
+      console.log(`⛔ invalid    ${v.raw}`);
+      console.log(`           ${v.reason}`);
+    }
+  }
+
+  if (valid.length === 0) {
+    if (NDJSON) {
+      process.stdout.write(JSON.stringify({ type: 'summary', total: rawUrls.length, active: 0, expired: 0, uncertain: 0, invalid: invalid.length }) + '\n');
+    } else {
+      console.log('\nNo valid URLs to check.');
+    }
+    process.exit(2);
+  }
+
+  if (!NDJSON) console.log(`Checking ${valid.length} URL(s)...\n`);
 
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
@@ -124,11 +195,16 @@ async function main() {
   let active = 0, expired = 0, uncertain = 0;
 
   // Sequential — project rule: never Playwright in parallel
-  for (const url of urls) {
+  for (const v of valid) {
+    const url = v.url;
     const { result, reason } = await checkUrl(page, url);
-    const icon = { active: '✅', expired: '❌', uncertain: '⚠️' }[result];
-    console.log(`${icon} ${result.padEnd(10)} ${url}`);
-    if (result !== 'active') console.log(`           ${reason}`);
+    if (NDJSON) {
+      process.stdout.write(JSON.stringify({ url, result, reason }) + '\n');
+    } else {
+      const icon = { active: '✅', expired: '❌', uncertain: '⚠️' }[result];
+      console.log(`${icon} ${result.padEnd(10)} ${url}`);
+      if (result !== 'active') console.log(`           ${reason}`);
+    }
     if (result === 'active') active++;
     else if (result === 'expired') expired++;
     else uncertain++;
@@ -136,8 +212,13 @@ async function main() {
 
   await browser.close();
 
-  console.log(`\nResults: ${active} active  ${expired} expired  ${uncertain} uncertain`);
-  if (expired > 0 || uncertain > 0) process.exit(1);
+  if (NDJSON) {
+    process.stdout.write(JSON.stringify({ type: 'summary', total: rawUrls.length, active, expired, uncertain, invalid: invalid.length }) + '\n');
+  } else {
+    console.log(`\nResults: ${active} active  ${expired} expired  ${uncertain} uncertain  ${invalid.length} invalid`);
+  }
+
+  if (expired > 0 || uncertain > 0 || invalid.length > 0) process.exit(1);
 }
 
 main().catch(err => {
